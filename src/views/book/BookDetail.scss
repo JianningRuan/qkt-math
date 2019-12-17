@@ -1,0 +1,25 @@
+.book-detail {
+  background: #fff;
+  padding-left: 0.32rem;
+  padding-right: 0.32rem;
+  .tit-info {
+    padding-top: 0.28rem;
+    padding-bottom: 0.28rem;
+    border-bottom: 0.01rem dashed #c1e4f6;
+    color: #848c92;
+    font-size: 0.34rem;
+    line-height: 0.4rem;
+  }
+  .book-answer {
+    padding-top: 0.28rem;
+    padding-bottom: 0.28rem;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    &.right {
+      color: #6ae13b;
+    }
+    &.wrong {
+      color: #ff1536;
+    }
+  }
+}

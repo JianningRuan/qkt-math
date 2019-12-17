@@ -1,0 +1,50 @@
+<template>
+  <div class="none-wrapper pb">
+    <div class="none-pic mb"></div>
+    <div class="none-tips"><slot name="tips"></slot></div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'BaseNone',
+  data () {
+    return {}
+  },
+  components: {},
+  created () {
+  },
+  mounted () {
+  },
+  activated () {
+  },
+  destroyed () {
+  },
+  watch: {},
+  computed: {},
+  filters: {},
+  methods: {}
+}
+</script>
+
+<style scoped lang="scss">
+  .none-wrapper {
+    .none-pic {
+      width: 2.78rem;
+      height: 2.14rem;
+      margin-left: auto;
+      margin-right: auto;
+      background: url(../../assets/images/common/none.png) center center no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .none-tips {
+      padding-left: 16%;
+      padding-right: 16%;
+      font-size: 0.28rem;
+      color: #848c92;
+      line-height: 0.42rem;
+      text-align: center;
+    }
+  }
+</style>

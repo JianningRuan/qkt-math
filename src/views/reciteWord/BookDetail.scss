@@ -1,0 +1,154 @@
+@import "./../../assets/styles/variable";
+
+.book-box {
+  padding: 0.32rem;
+  .book-avatar {
+    width: 1.72rem;
+    height: 2.22rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    margin-right: 0.24rem;
+    img {
+      width: 1.72rem;
+      height: 2.22rem;
+      display: block;
+    }
+    .label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0.76rem;
+      height: 0.74rem;
+      &.ing-label {
+        background: url("~@/assets/images/word/ing.png") 0 0 no-repeat;
+        background-size: 0.76rem 0.74rem;
+      }
+      &.finish-label {
+        background: url("~@/assets/images/word/finish.png") 0 0 no-repeat;
+        background-size: 0.76rem 0.74rem;
+      }
+    }
+  }
+  .book-info {
+    h2 {
+      color: #848c92;
+      font-size: 0.34rem;
+      line-height: 0.4rem;
+      margin-bottom: 0.1rem;
+    }
+    .change {
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 0.2rem;
+      background: #8eceef;
+      text-align: center;
+      line-height: 0.4rem;
+      color: #fff;
+      font-size: 0.24rem;
+    }
+    p {
+      font-size: 0.28rem;
+      color: #848c92;
+      line-height: 0.5rem;
+      em {
+        color: #d9b60b;
+      }
+    }
+    .study-msg {
+      p {
+
+      }
+      .study-progress {
+        height: 0.26rem;
+        border-radius: 0.13rem;
+        box-shadow: inset 0 1px 2px 0 rgba(49, 158, 192, 0.3);
+        background: #dfe2e5;
+        .progress {
+          width: 50%;
+          height: 0.26rem;
+          border-radius: 0.13rem;
+          background: #79d0ff;
+        }
+      }
+    }
+
+    .label-btn {
+      width: 1.6rem;
+      height: 0.64rem;
+      // display: block;
+      border-radius: 0.15rem;
+      background: #fcd644;
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.64rem;
+      text-align: center;
+      border-bottom: 0.08rem solid #e0c722;
+    }
+    .label-btn-end {
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.58rem;
+    }
+  }
+}
+
+
+
+.audio-box {
+  padding: 0.32rem;
+  margin-bottom: 1.72rem;
+}
+
+/* .audio-list {
+  .audio-item {
+    height: 1.16rem;
+    background: #e8f7ff;
+    &:nth-child(2n) {
+      background: #fff;
+    }
+
+    .audio-btn {
+      width: 0.4rem;
+      height: 0.34rem;
+      background: url("~@/assets/images/word/play.png") 0 0 no-repeat;
+      background-size: 0.4rem 0.34rem;
+      margin-left: 0.3rem;
+      &.play {
+        background: url("~@/assets/images/word/play.gif") 0 0 no-repeat;
+        background-size: 0.4rem 0.34rem;
+      }
+    }
+    .word {
+      padding-left: 0.28rem;
+      h2 {
+        font-size: 0.34rem;
+        color: #8cd2f6;
+        line-height: 0.5rem;
+      }
+      p {
+        font-size: 0.28rem;
+        color: #848c92;
+        line-height: 0.48rem;
+      }
+    }
+    .word-type {
+      padding-left: 0.38rem;
+      padding-right: 0.38rem;
+      font-size: 0.28rem;
+      color: #848c92;
+      &.study {
+        color: #e97673;
+      }
+    }
+  }
+} */
+
+.study-btn {
+  position: fixed;
+  bottom: 0.76rem;
+  left: 0.8rem;
+  right: 0.8rem;
+  line-height: 0.8rem;
+  height: 0.8rem;
+}

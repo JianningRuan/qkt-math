@@ -1,0 +1,330 @@
+@import "~@/assets/styles/variable.scss";
+
+.home-btn {
+  display: block;
+  height: 0.54rem;
+  border-bottom: 0.04rem solid #34a8e6;
+  background: #79d0ff url("~@/assets/images/home/btn-light.png") 0 0 no-repeat;
+  background-size: 0.24rem 0.24rem;
+  line-height: 0.54rem;
+  border-radius: 0.15rem;
+  font-size: 0.28rem;
+  text-align: center;
+  color: #fff;
+}
+
+.home-box {
+  border-radius: 0.25rem;
+  background: #d1efff;
+  border-bottom: 0.08rem solid rgba(85, 156, 185, 0.3);
+}
+
+/* .message-box {
+  padding-top: 0.34rem;
+  padding-bottom: 0.48rem;
+  .user-box {
+    .user-head {
+      width: 1.2rem;
+      height: 1.2rem;
+      border: 0.04rem solid #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 0.15rem;
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+      }
+    }
+    .user-info {
+      h2 {
+        font-size: 0.34rem;
+        color: #fff;
+        font-weight: normal;
+      }
+      .level-box {
+        width: 1.68rem;
+        height: 0.48rem;
+        background: #54bbdb;
+        box-shadow: 0 0 2px 0 rgba(49, 158, 192, 0.35) inset;
+        border-radius: 0.24rem;
+        position: relative;
+        overflow: hidden;
+        .level-progress {
+          width: 0;
+          height: 0.48rem;
+          background: #46b1d2;
+          border-radius: 0.24rem;
+        }
+        .level-name {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1.68rem;
+          height: 0.48rem;
+          line-height: 0.48rem;
+          font-size: 0.24rem;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .bee-btn {
+    width: 0.75rem;
+    height: 0.86rem;
+    background: url("~@/assets/images/home/bee.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+} */
+.level-wrapper {
+  height: 0.76rem;
+  padding-left: 0.48rem;
+  padding-right: 0.48rem;
+  background: #d1efff;
+  span {
+    font-size: 0.28rem;
+    color: #46b1d2;
+    em {
+      color: #ff2a2a;
+    }
+  }
+  .detail-btn {
+    width: 1.32rem;
+    height: 0.48rem;
+    border-radius: 0.24rem;
+    background: #eec248;
+    font-size: 0.24rem;
+    color: #fff;
+    box-shadow: 0 0 2px 0 rgba(221, 170, 28, 0.35) inset;
+    text-align: center;
+    line-height: 0.48rem;
+  }
+}
+
+.task-box {
+  padding-top: 0.32rem;
+  padding-left: 0.32rem;
+  padding-right: 0.32rem;
+  margin-bottom: 0.32rem;
+  .task-tit {
+    margin-bottom: 0.32rem;
+    .task-num {
+      padding-left: 0.3rem;
+      height: 0.58rem;
+      line-height: 0.58rem;
+      color: $mainFontColor;
+      font-size: 0.34rem;
+      font-weight: bold;
+      background: #c2e4f6;
+      box-shadow: 0 0 2px 0 rgba(49, 158, 192, 0.35) inset;
+      border-radius: 0.15rem;
+      span {
+        font-size: 0.28rem;
+        font-weight: normal;
+      }
+    }
+    .home-btn {
+      width: 1.2rem;
+      margin-left: 0.23rem;
+    }
+  }
+
+  .task-swipe {
+    height: 3.3rem;
+  }
+  .task-cont {
+    height: 2.22rem;
+    background: #fff;
+    border-radius: 0.15rem;
+    padding: 0.32rem;
+    .task-pic {
+      width: 1.72rem;
+      height: 2.22rem;
+      border-radius: 0.1rem;
+      overflow: hidden;
+      margin-right: 0.32rem;
+      img {
+        width: 1.72rem;
+        height: 2.22rem;
+        overflow: hidden;
+      }
+    }
+    .task-info {
+      // width: 3.36rem;
+      .task-name {
+        h2 {
+          font-size: 0.34rem;
+          color: #5da8cf;
+          line-height: 0.38rem;
+          margin-bottom: 0.2rem;
+        }
+        p {
+          font-size: 0.28rem;
+          line-height: 0.36rem;
+          color: #5da8cf;
+          span {
+            color: #d9b60b;
+          }
+        }
+      }
+      .label-btn {
+        width: 1.62rem;
+        height: 0.58rem;
+        // display: block;
+        border-radius: 0.15rem;
+        background: #fce43a linear-gradient(#fce744,#f9d116);
+        color: #ff2a2a;
+        font-size: 0.28rem;
+        line-height: 0.58rem;
+        span {
+          width: 0.34rem;
+          height: 0.34rem;
+          background: #fff;
+          border-radius: 50%;
+          display: block;
+          margin-left: 0.08rem;
+          margin-right: 0.16rem;
+          line-height: 0.34rem;
+          text-align: center;
+          .great-icon {
+            color: #fadc23;
+            font-size: 0.18rem;
+          }
+        }
+      }
+    }
+  }
+
+  .test-tips {
+    background: #fff;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.2rem 0.27rem 0.2rem;
+    .test-tips-cont {
+      padding-bottom: 0.16rem;
+      .tips-pic {
+        width: 1.7rem;
+        height: 1.64rem;
+        background: url("~@/assets/images/home/test.jpg") 0 0 no-repeat;
+        background-size: 1.7rem 1.64rem;
+        margin-right: 0.2rem;
+      }
+      .tips-text {
+        font-size: 0.34rem;
+        color: #666;
+        line-height: 0.48rem;
+      }
+    }
+    .test-btn {
+      width: 1.62rem;
+      height: 0.58rem;
+      display: block;
+      border-radius: 0.15rem;
+      background: #fce43a linear-gradient(#fce744,#f9d116);
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.58rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}
+
+.ranking-box {
+  margin-right: 0.16rem;
+  // width: 2.86rem;
+  height: 1.72rem;
+  padding-top: 0.32rem;
+  padding-left: 0.32rem;
+  background: #d1efff url("~@/assets/images/home/ranking-box.jpg") top right no-repeat;
+  background-size: 3.18rem 2.04rem;
+  h2 {
+    font-size: 0.34rem;
+    color: $mainFontColor;
+    line-height: 0.34rem;
+    margin-bottom: 0.1rem;
+  }
+  p {
+    font-size: 0.24rem;
+    color: $mainFontColor;
+  }
+  .tips {
+    width: 1.28rem;
+    margin-bottom: 0.2rem;
+    em {
+      color: #ff2a2a;
+    }
+  }
+}
+
+.review-box {
+  // width: 2.86rem;
+  height: 1.72rem;
+  padding-top: 0.32rem;
+  padding-left: 0.32rem;
+  background: #d1efff url("~@/assets/images/home/error-book.jpg") top right no-repeat;
+  background-size: 3.18rem 2.04rem;
+  position: relative;
+  h2 {
+    font-size: 0.34rem;
+    color: $mainFontColor;
+    line-height: 0.34rem;
+    margin-bottom: 0.1rem;
+  }
+  p {
+    font-size: 0.24rem;
+    color: $mainFontColor;
+  }
+  .tips {
+    width: 1.6rem;
+    margin-bottom: 0.2rem;
+    em {
+      color: #ff2a2a;
+    }
+  }
+  .practice-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 0.98rem;
+    background: url("~@/assets/images/home/practice-label.png") 0 0 no-repeat;
+    background-size: 1rem 0.98rem;
+  }
+}
+
+.test-btn-wrapper {
+  width: 100%;
+  height: 0.88rem;
+  position: relative;
+  margin-bottom: 0.74rem;
+  .test-bg {
+    width: 100%;
+    height: 0.88rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.25rem;
+    background: #d0f4ff url("~@/assets/images/home/test-btn-pic.png") right top no-repeat;
+    background-size: 1.44rem 0.88rem;
+    opacity: 0.85;
+    z-index: 1;
+  }
+  a {
+    height: 0.88rem;
+    position: absolute;
+    top: 0;
+    left: 0.36rem;
+    right: 0;
+    line-height: 0.88rem;
+    color: $mainFontColor;
+    font-size: 0.28rem;
+    z-index: 2;
+    display: block;
+    .right-icon {
+      font-size: 0.2rem;
+    }
+  }
+}
+

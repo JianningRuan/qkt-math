@@ -1,0 +1,23 @@
+.about-box {
+  background: #fff;
+  padding: 0.4rem 0.32rem;
+  margin-bottom: 0.48rem;
+
+  .logo {
+    width: 3rem;
+    height: 2.62rem;
+    background: url("~@/assets/images/my/about-logo.png") 0 0 no-repeat;
+    background-size: 3rem 2.62rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about {
+    background: url("~@/assets/images/my/line.png") 0 0 repeat;
+    background-size: 0.48rem 0.56rem;
+    p {
+      line-height: 0.56rem;
+      font-size: 0.28rem;
+      color: #2e3133;
+    }
+  }
+}

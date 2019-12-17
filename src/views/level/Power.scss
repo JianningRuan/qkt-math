@@ -1,0 +1,266 @@
+.main {
+  padding-left: 0.48rem;
+  padding-right: 0.48rem;
+}
+
+.info-box {
+  padding: 0.7rem 0.32rem 0.32rem 0.32rem;
+  background: #fff url("~@/assets/images/test/result-top.png") top center no-repeat;
+  background-size: 6.54rem 0.43rem;
+  position: relative;
+  margin-bottom: 0.24rem;
+  &:after {
+    content: '';
+    width: 0.18rem;
+    height: 0.86rem;
+    background: url("~@/assets/images/level/book-line.png") 0 0 no-repeat;
+    background-size: 0.18rem 0.86rem;
+    position: absolute;
+    left: 0.26rem;
+    bottom: -0.58rem;
+    z-index: 2;
+  }
+  &:before {
+    content: '';
+    width: 0.18rem;
+    height: 0.86rem;
+    background: url("~@/assets/images/level/book-line.png") 0 0 no-repeat;
+    background-size: 0.18rem 0.86rem;
+    position: absolute;
+    right: 0.26rem;
+    bottom: -0.58rem;
+    z-index: 2;
+  }
+
+  .user-box {
+    padding-left: 0.2rem;
+    flex: 2;
+    border-right: 0.01rem solid #c1e4f6;
+    .user-head {
+      width: 1.2rem;
+      height: 1.2rem;
+      border: 0.04rem solid #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 0.15rem;
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+      }
+    }
+    .user-info {
+      h2 {
+        font-size: 0.34rem;
+        color: #5cc6fd;
+        font-weight: normal;
+      }
+      .level-box {
+        width: 1.68rem;
+        height: 0.48rem;
+        background: #dfe2e5;
+        box-shadow: 0 0 2px 0 rgba(49, 158, 192, 0.35) inset;
+        border-radius: 0.24rem;
+        position: relative;
+        overflow: hidden;
+        .level-progress {
+          width: 0;
+          height: 0.48rem;
+          background: #79d0ff;
+          border-radius: 0.24rem;
+        }
+        .level-name {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1.68rem;
+          height: 0.48rem;
+          line-height: 0.48rem;
+          font-size: 0.24rem;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .power {
+    flex: 1;
+    h2 {
+      font-size: 0.4rem;
+      color: #d9b60b;
+      line-height: 0.56rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.24rem;
+      color: #848c92;
+      line-height: 0.3rem;
+      text-align: center;
+    }
+  }
+}
+.result-box {
+  padding: 0.58rem 0.32rem 0 0.32rem;
+  background: #fff;
+  position: relative;
+  margin-bottom: 0.24rem;
+  &:after {
+    content: '';
+    width: 0.18rem;
+    height: 0.86rem;
+    background: url("~@/assets/images/level/book-line.png") 0 0 no-repeat;
+    background-size: 0.18rem 0.86rem;
+    position: absolute;
+    left: 0.26rem;
+    bottom: -0.58rem;
+  }
+  &:before {
+    content: '';
+    width: 0.18rem;
+    height: 0.86rem;
+    background: url("~@/assets/images/level/book-line.png") 0 0 no-repeat;
+    background-size: 0.18rem 0.86rem;
+    position: absolute;
+    right: 0.26rem;
+    bottom: -0.58rem;
+  }
+  .result-pic {
+    width: 100%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .result-info {
+    padding-top: 0.24rem;
+    padding-bottom: 0.32rem;
+    border-bottom: 0.01rem dashed #c1e4f6;
+    .result-item {
+      text-align: center;
+      h4 {
+        font-size: 0.34rem;
+        line-height: 0.36rem;
+        color: #5cc6fd;
+      }
+      p {
+        font-size: 0.24rem;
+        color: #848c92;
+      }
+      &:last-child {
+        border-left: 0.01rem solid #c1e4f6;
+      }
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+
+  .result-circle {
+    padding-top: 0.32rem;
+    padding-bottom: 0.32rem;
+    .circle-item {
+      width: 1.42rem;
+      position: relative;
+      font-size: 0;
+      .circle-info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0.38rem;
+        text-align: center;
+        p {
+          font-size: 0.24rem;
+          color: #848c92;
+          line-height: 0.3rem;
+        }
+        h4 {
+          font-size: 0.34rem;
+          color: #5cc6fd;
+          line-height: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+.knowledge-box {
+  padding: 0.32rem;
+  background: #fff;
+  .knowledge-tit {
+    height: 0.64rem;
+    line-height: 0.64rem;
+    padding-left: 0.18rem;
+    padding-right: 0.18rem;
+    margin-bottom: 0.1rem;
+    span {
+      font-size: 0.28rem;
+      color: #848c92;
+    }
+  }
+
+  .knowledge-list {
+    .knowledge-item {
+      height: 0.66rem;
+      border-radius: 0.33rem;
+      background: #e8f7ff;
+      padding-left: 0.18rem;
+      padding-right: 0.18rem;
+      margin-bottom: 0.24rem;
+      .kn-icon {
+        width: 0.38rem;
+        height: 0.38rem;
+        border-radius: 50%;
+        margin-right: 0.12rem;
+        line-height: 0.38rem;
+        text-align: center;
+        font-size: 0.3rem;
+      }
+      .kn-name {
+        font-size: 0.24rem;
+        color: #848c92;
+      }
+      .kn-num {
+        font-size: 0.28rem;
+        color: #5cc6fd;
+        font-weight: bold;
+      }
+      &:nth-child(6n+1){
+        .kn-icon {
+          background-color: #8cd2f6;
+        }
+      }
+      &:nth-child(6n+2){
+        .kn-icon {
+          background-color: #f6a08c;
+        }
+      }
+      &:nth-child(6n+3){
+        .kn-icon {
+          background-color: #a7f68c;
+        }
+      }
+      &:nth-child(6n+4){
+        .kn-icon {
+          background-color: #e6f68c;
+        }
+      }
+      &:nth-child(6n+5){
+        .kn-icon {
+          background-color: #f68ca5;
+        }
+      }
+      &:nth-child(6n){
+        .kn-icon {
+          background-color: #918cf6;
+        }
+      }
+    }
+  }
+
+  .join-btn {
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.34rem;
+  }
+}

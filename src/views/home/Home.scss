@@ -1,0 +1,120 @@
+@import "~@/assets/styles/variable.scss";
+@import "./section";
+@import "./resources-box-list";
+.find-banner {
+  overflow: hidden;
+  margin-left: -0.48rem;
+  margin-right: -0.48rem;
+  a {
+    display: block;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.study-list{
+  .study-item{
+    background: #ffffff;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.1rem 0 #7ec6ec;
+    line-height: 1rem;
+    padding: 0 0.3rem;
+    margin-bottom: 0.15rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .tag{
+      display: inline-block;
+      width: 0.7rem;
+      height: 0.42rem;
+      line-height: 0.42rem;
+      font-size: 0.24rem;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 0.1rem 0 0.1rem 0;
+      margin-right: .15rem;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#46bcf2+0,78d3fd+100 */
+      background: #46bcf2; /* Old browsers */
+      background: -moz-linear-gradient(top,  #46bcf2 0%, #78d3fd 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #46bcf2 0%,#78d3fd 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #46bcf2 0%,#78d3fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46bcf2', endColorstr='#78d3fd',GradientType=0 ); /* IE6-9 */
+    }
+    .title{
+      font-size: 0.34rem;
+      color: #5da8cf;
+      @extend .text-over-ellipsis;
+      min-width: 0;
+      margin-right: 0.15rem;
+    }
+    .btn{
+      font-size: 0.28rem;
+    }
+  }
+}
+
+
+.find-video-box-list{
+  .find-video-box {
+    height: 1.8rem;
+    padding-top: 0.2rem;
+    padding-left: 0.32rem;
+    padding-right: 0.32rem;
+    padding-bottom: 0.2rem;
+    background-color: #ffffff;
+    border-bottom: 0.08rem solid #7ec6ec;
+    .tips{
+      font-size: 0.24rem;
+      color: #f7ba2a;
+      svg{
+        margin-right: 0.1rem;
+      }
+    }
+    h2 {
+      font-size: 0.34rem;
+      color: #5da8cf;
+      font-weight: normal;
+      line-height: 0.62rem;
+      .recommend {
+        width: 0.7rem;
+        height: 0.42rem;
+        background: url("~@/assets/images/find/recommend.png") 0 0 no-repeat;
+        background-size: 0.7rem 0.42rem;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.2rem;
+      }
+    }
+    p {
+      font-size: 0.24rem;
+      color: #848c92;
+      line-height: 0.48rem;
+    }
+    &:nth-child(1n){
+      background-image: url("~@/assets/images/find/box-bg1.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 2.08rem 1rem;
+    }
+    &:nth-child(2n){
+      background-image: url("~@/assets/images/find/box-bg2.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 2.08rem 1rem;
+    }
+    &:nth-child(3n){
+      background-image: url("~@/assets/images/find/box-bg3.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 2.08rem 1rem;
+    }
+  }
+}
+
+
+
+
+
+

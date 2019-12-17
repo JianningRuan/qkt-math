@@ -1,0 +1,126 @@
+.wrapper {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 3.3rem;
+  height: 2.86rem;
+  padding-top: 0.48rem;
+  padding-bottom: 0.26rem;
+  img {
+    width: 3.3rem;
+    height: 2.86rem;
+  }
+}
+
+.login-box {
+  margin-bottom: 0.52rem;
+  margin-left: 0.48rem;
+  margin-right: 0.48rem;
+  padding: 0.32rem;
+  background: #fff;
+
+  .input-box {
+    border-bottom: 0.01rem solid #e5e5e5;
+    height: 0.9rem;
+    margin-bottom: 0.24rem;
+    position: relative;
+    .login-icon-box {
+      width: 0.4rem;
+      text-align: center;
+      // margin-right: 0.28rem;
+      height: 0.42rem;
+      line-height: 0.42rem;
+      font-size: 0.32rem;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.22rem;
+      left: 0;
+    }
+    .login-icon {
+      color: #666;
+    }
+    .login-icon-big {
+      color: #666;
+      font-size: 0.36rem;
+    }
+    input {
+      // width: 100%;
+      width: 3.3rem;
+      border: 0;
+      height: 0.42rem;
+      line-height: 0.42rem;
+      font-size: 0.34rem;
+      padding-left: 0.68rem;
+    }
+    .pic-code {
+      width: 1.86rem;
+      height: 0.7rem;
+      border-radius: 0.05rem;
+      overflow: hidden;
+      font-size: 0;
+      img {
+        width: 1.86rem;
+        height: 0.7rem;
+        display: block;
+      }
+    }
+    .get-code {
+      font-size: 0.28rem;
+      color: #79d0ff;
+      margin-left: 0.2rem;
+      &:active {
+        color: #1c6ca1;
+      }
+      &.break {
+        color: #999;
+      }
+    }
+  }
+
+  .login-btn {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-bottom: 0.28rem;
+
+    .loading {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 0.1rem;
+    }
+  }
+
+  .agreement-box {
+    .radio-btn {
+      width: 0.24rem;
+      height: 0.24rem;
+      border: 0.02rem solid #999;
+      border-radius: 0.12rem;
+      margin-right: 0.15rem;
+      font-size: 0.18rem;
+      svg {
+        display: none;
+      }
+      &.radio-true {
+        border: 0.02rem solid #8bd1e7;
+        text-align: center;
+        line-height: 0.24rem;
+        color: #8bd1e7;
+        svg {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    .agreement-cont {
+      color: #999;
+      font-size: 0.22rem;
+      line-height: 0.36rem;
+      a {
+        color: #8bd1e7;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,55 @@
+.wrapper {
+  min-height: 100vh;
+}
+.data-box {
+  background: #fff;
+  // padding: 0.32rem;
+  // margin-bottom: 0.48rem;
+  .avatar {
+    width: 0.9rem;
+    height: 0.9rem;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+      width: 0.9rem;
+      height: 0.9rem;
+      display: block;
+    }
+  }
+  .input-box {
+    border-bottom: 0.01rem solid #e5e5e5;
+    min-height: 1.08rem;
+    // margin-bottom: 0.24rem;
+    .label {
+      font-size: 0.34rem;
+      color: #848c92;
+    }
+    input {
+      width: 100%;
+      font-size: 0.34rem;
+      border: 0;
+      line-height: 0.42rem;
+      text-align: right;
+    }
+    .right-icon {
+      width: 0.2rem;
+      height: 0.28rem;
+      text-align: center;
+      line-height: 0.28rem;
+      font-size: 0.2rem;
+      color: #848c92;
+      margin-left: 0.12rem;
+    }
+  }
+
+  .submit-btn {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .tips {
+    font-size: 0.28rem;
+    color: #848c92;
+  }
+}

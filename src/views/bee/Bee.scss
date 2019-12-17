@@ -1,0 +1,305 @@
+.wrapper {
+  background: #97dbff url("~@/assets/images/bee/bee-grassland.jpg") bottom center no-repeat;
+  background-size: 100% auto;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.sun-bg {
+  width: 100%;
+  height: 9.48rem;
+  background: url("~@/assets/images/bee/sun.png") top right no-repeat;
+  background-size: 6rem 9.48rem;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.nav-list {
+  width: 1.18rem;
+
+  .nav-item {
+    width: 1.18rem;
+    height: 1.18rem;
+    position: relative;
+    margin-bottom: 0.46rem;
+    user-select: none;
+    &.calendar {
+      background: url("~@/assets/images/bee/calendar.png") 0 0 no-repeat;
+      background-size: 1.18rem 1.18rem;
+      &:active {
+        animation: clickBtn 1s linear;
+      }
+    }
+    &.task {
+      background: url("~@/assets/images/bee/task.png") 0 0 no-repeat;
+      background-size: 1.18rem 1.18rem;
+      &:active {
+        animation: clickBtn 1s linear;
+      }
+    }
+    &.gift {
+      background: url("~@/assets/images/bee/gift.png") 0 0 no-repeat;
+      background-size: 1.18rem 1.18rem;
+      &:active {
+        animation: clickBtn 1s linear;
+      }
+    }
+
+    .font {
+      position: absolute;
+      bottom: -0.24rem;
+      left: 50%;
+      margin-left: -0.39rem;
+      width: 0.78rem;
+      height: 0.44rem;
+      &.calendar-font {
+        background: url("~@/assets/images/bee/calendar-font.png") center center no-repeat;
+        background-size: 0.78rem 0.44rem;
+      }
+      &.task-font {
+        background: url("~@/assets/images/bee/task-font.png") center center no-repeat;
+        background-size: 0.78rem 0.44rem;
+      }
+      &.gift-font {
+        background: url("~@/assets/images/bee/gift-font.png") center center no-repeat;
+        background-size: 0.78rem 0.44rem;
+      }
+    }
+  }
+}
+.honey-box {
+  width: 1.06rem;
+  height: 1.06rem;
+  background: #affe88 url("~@/assets/images/bee/honey.png") center center no-repeat;
+  background-size: 0.65rem 0.72rem;
+  border-radius: 50%;
+  border: 0.06rem solid #7fdc50;
+  box-shadow: 0 0.02rem 0 0 #7fd653;
+  position: fixed;
+  right: 0.32rem;
+  bottom: 1.82rem;
+  .honey-num {
+    width: 1.18rem;
+    height: 0.48rem;
+    border-radius: 0.24rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+    line-height: 0.48rem;
+    background: #7fdc50;
+    box-shadow: 0 0.02rem 0 0 #7fd653;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.59rem;
+    bottom: -0.22rem;
+  }
+}
+
+.shadow {
+  width: 2.14rem;
+  height: 0.32rem;
+  border-radius: 50% / 50%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 1.6rem;
+  left: 50%;
+  margin-left: -1.07rem;
+}
+.bee {
+  width: 3.92rem;
+  height: 4.66rem;
+  background: url("~@/assets/images/bee/bee.gif") 0 0 no-repeat;
+  background-size: 3.92rem 4.66rem;
+  position: fixed;
+  bottom: 1.8rem;
+  left: 50%;
+  margin-left: -1.96rem;
+  user-select: none;
+  &:active {
+    animation: clickBee 4s ease;
+  }
+}
+.tips {
+  width: 4.28rem;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  background: #6ec2f0;
+  text-align: center;
+  line-height: 0.6rem;
+  font-size: 0.28rem;
+  color: #fff;
+  position: fixed;
+  left: 50%;
+  margin-left: -2.14rem;
+  bottom: 6.12rem;
+}
+
+.bee-pop {
+  border-radius: 0.25rem 0.25rem 0 0;
+  overflow: visible;
+  .task-icon {
+    width: 1.18rem;
+    height: 1.18rem;
+    position: absolute;
+    top: -0.59rem;
+    left: 50%;
+    margin-left: -0.59rem;
+    background: url("~@/assets/images/bee/task.png") 0 0 no-repeat;
+    background-size: 1.18rem 1.18rem;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0.02rem 0 0 #d9d9d9;
+  }
+  .gift-icon {
+    width: 1.18rem;
+    height: 1.18rem;
+    position: absolute;
+    top: -0.59rem;
+    left: 50%;
+    margin-left: -0.59rem;
+    background: url("~@/assets/images/bee/gift.png") 0 0 no-repeat;
+    background-size: 1.18rem 1.18rem;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0.02rem 0 0 #d9d9d9;
+  }
+}
+
+.pop-main {
+  padding-top: 0.48rem;
+  .tit {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.4rem;
+    color: #8cd2f6;
+    border-bottom: 0.01rem solid #c1e4f6;
+  }
+  .task-list {
+    padding-top: 0.38rem;
+    .task-item {
+      padding: 0.42rem 0.32rem;
+      height: 1.04rem;
+      margin-bottom: 0.32rem;
+      border-radius: 0.25rem;
+      background: #8cdcf3;
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: '';
+        width: 3.78rem;
+        height: 0.42rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("~@/assets/images/bee/task-box-before.png") 0 0 no-repeat;
+        background-size: 3.78rem 0.42rem;
+      }
+      &:after {
+        content: '';
+        width: 4.04rem;
+        height: 0.42rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url("~@/assets/images/bee/task-box-after.png") 0 0 no-repeat;
+        background-size: 4.04rem 0.42rem;
+      }
+      .done-btn {
+        width: 1.84rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        &.finish-btn {
+          background: #fbd548;
+          border-bottom: 0.08rem solid #dfc62a;
+        }
+      }
+      .end {
+        width: 1.84rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0.34rem;
+        color: #fff;
+        text-align: center;
+      }
+      .task-tit {
+        font-size: 0.34rem;
+        color: #fff;
+        line-height: 0.46rem;
+      }
+      .task-cont {
+        font-size: 0.28rem;
+        color: #fff;
+        line-height: 0.42rem;
+        span {
+          margin-right: 0.3rem;
+        }
+        img {
+          width: 0.28rem;
+          margin-right: 0.08rem;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.cloud-b {
+  width: 2.59rem;
+  height: 1.22rem;
+  background: url("~@/assets/images/bee/cloud.png") 0 0 no-repeat;
+  background-size: 2.59rem 1.22rem;
+  position: fixed;
+  top: 4rem;
+  right: -3rem;
+  animation: cloudLeft 12s linear infinite;
+  animation-delay: 5s;
+}
+.cloud-m {
+  width: 1.49rem;
+  height: 0.7rem;
+  background: url("~@/assets/images/bee/cloud.png") 0 0 no-repeat;
+  background-size: 1.49rem 0.7rem;
+  position: fixed;
+  top: 2.6rem;
+  right: -3rem;
+  animation: cloudLeft 10s linear infinite;
+}
+.cloud-s {
+  width: 1.18rem;
+  height: 0.56rem;
+  background: url("~@/assets/images/bee/cloud.png") 0 0 no-repeat;
+  background-size: 1.18rem 0.56rem;
+  position: fixed;
+  top: 1.6rem;
+  right: -3rem;
+  animation: cloudLeft 18s linear infinite;
+}
+
+@keyframes cloudLeft {
+  0% {
+    right: -3rem;
+  }
+  100% {
+    right: calc(100% + 3rem);
+  }
+}
+
+@keyframes clickBtn {
+  0% {}
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+
+  }
+}
+@keyframes clickBee {
+  50% {
+    transform: translateY(-4rem);
+  }
+}

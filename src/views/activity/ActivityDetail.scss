@@ -1,0 +1,98 @@
+
+
+.input-padding-bottom {
+  padding-bottom: 1.46rem;
+}
+.activity-detail {
+  padding-top: 0.24rem;
+  padding-bottom: 0.24rem;
+  border-bottom: 1px solid #e1e1e1;
+  h1 {
+    font-size: 0.38rem;
+    color: #222;
+    line-height: 0.72rem;
+  }
+  .activity-info {
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.4rem;
+  }
+  .activity-cont {
+    font-size: 0.24rem;
+    line-height: 0.42rem;
+    color: #222;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .join-box {
+    .join-btn {
+      height: 0.84rem;
+      line-height: 0.84rem;
+      font-size: 0.42rem;
+      border-bottom: 0.04rem solid #34a8e6;
+    }
+    .joined-btn {
+      height: 0.84rem;
+      line-height: 0.84rem;
+      font-size: 0.42rem;
+      border-bottom: 0.04rem solid #afafaf;
+      background: #c3c3c3;
+    }
+
+    p {
+      font-size: 0.28rem;
+      text-align: center;
+      color: #0d4d89;
+      line-height: 0.42rem;
+    }
+  }
+
+}
+
+.reply-list {
+  h2 {
+    color: #5da8cf;
+    font-size: 0.34rem;
+    line-height: 0.4rem;
+    padding-bottom: 0.1rem;
+    padding-top: 0.4rem;
+  }
+}
+
+.reply-wrapper {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 35;
+  background: #f7f7f7;
+  border-top: 1px solid #d7d7d7;
+  .reply-input {
+    box-sizing: border-box;
+    border: 0.02rem solid #d7d7d7;
+    background: #fff;
+    border-radius: 0.08rem;
+    height: 0.7rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.24rem;
+    font-size: 0.28rem;
+    color: #666;
+    line-height: 0.46rem;
+    margin-right: 0.2rem;
+  }
+  .reply-submit {
+    width: 1.35rem;
+    height: 0.65rem;
+    font-size: 0.34rem;
+    line-height: 0.65rem;
+    border-bottom: 0.04rem solid #34a8e6;
+  }
+  .pic-btn {
+    font-size: 0.6rem;
+  }
+}

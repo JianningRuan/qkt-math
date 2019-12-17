@@ -1,0 +1,91 @@
+.main {
+  padding-left: 0.48rem;
+  padding-right: 0.48rem;
+}
+
+.result-box {
+  padding: 0.58rem 0.32rem;
+  background: #fff url("~@/assets/images/test/result-top.png") top center no-repeat;
+  background-size: 6.54rem 0.43rem;
+  .result-pic {
+    width: 100%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .result-info {
+    padding-top: 0.24rem;
+    padding-bottom: 0.32rem;
+    border-bottom: 0.01rem dashed #c1e4f6;
+    .result-item {
+      text-align: center;
+      h4 {
+        font-size: 0.34rem;
+        line-height: 0.36rem;
+        color: #5cc6fd;
+      }
+      p {
+        font-size: 0.24rem;
+        color: #848c92;
+      }
+      &:last-child {
+        border-left: 0.01rem solid #c1e4f6;
+      }
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+
+  .result-circle {
+    padding-top: 0.32rem;
+    padding-bottom: 0.32rem;
+    border-bottom: 0.01rem dashed #c1e4f6;
+    .circle-item {
+      width: 1.42rem;
+      position: relative;
+      font-size: 0;
+      .circle-info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0.38rem;
+        text-align: center;
+        p {
+          font-size: 0.24rem;
+          color: #848c92;
+          line-height: 0.3rem;
+        }
+        h4 {
+          font-size: 0.34rem;
+          color: #5cc6fd;
+          line-height: 0.4rem;
+        }
+      }
+    }
+  }
+
+  .result-tips {
+    padding-top: 0.32rem;
+    padding-bottom: 0.32rem;
+    .tips-tit {
+      font-size: 0.34rem;
+      color: #5cc6fd;
+      line-height: 0.4rem;
+      margin-bottom: 0.2rem;
+    }
+    .tips-cont {
+      font-size: 0.28rem;
+      color: #5cc6fd;
+      line-height: 0.44rem;
+    }
+  }
+
+  .join-btn {
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.34rem;
+  }
+}

@@ -1,0 +1,161 @@
+#checkin{
+  min-height: 100vh;
+  background: #ffffff;
+  header{
+    height: 2.90rem;
+    background-image: url("~@/assets/images/checkin/top-bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    .header-warp{
+      margin: 0 auto;
+      color: #ffffff;
+      text-align: center;
+      .title{
+        font-size: 0.36rem;
+        letter-spacing: 0.05rem;
+      }
+      .num{
+        font-size: 0.72rem;
+        margin-top: 0.1rem;
+      }
+    }
+  }
+
+  .study-time-static{
+    margin-top: 0.3rem;
+    .title{
+      padding: 0 0.3rem;
+      font-size: 0.34rem;
+      color: #5da8cf;
+    }
+    .cont{
+      background: #fbfafa;
+      margin-top: 0.3rem;
+      .study-time-static-list{
+        .study-time-static-item{
+          position: relative;
+          display: inline-block;
+          width: 1rem;
+          &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(242,242,242,0.6);
+            z-index: 2;
+          }
+
+
+          .date{
+            text-align: center;
+            margin-top: 0.25rem;
+            color: #cccccc;
+            font-size: 0.24rem;
+          }
+          .column{
+            border-right: 1px solid #e1e1e1;
+            padding: 0.6rem 0.2rem 0 0.2rem;;
+            .column-warp{
+              position: relative;
+              height: 2.75rem;
+              .column-rect{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 0.1rem 0.1rem 0 0;
+                background: #2185d2; /* Old browsers */
+                background: -moz-linear-gradient(top,  #2185d2 0%, #4bccd8 84%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  #2185d2 0%,#4bccd8 84%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  #2185d2 0%,#4bccd8 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2185d2', endColorstr='#4bccd8',GradientType=0 ); /* IE6-9 */
+                .column-text{
+                  position: absolute;
+                  width: 100%;
+                  text-align: center;
+                  font-size: 0.22rem;
+                  color: #cccccc;
+                  margin-top: -0.35rem;
+                }
+              }
+            }
+
+          }
+          &:last-child{
+            .column{
+              border-right: 0;
+            }
+          }
+
+          &.swiper-slide-active{
+            background: #eaf9ff;
+            &:after{
+              display: none;
+            }
+            .date{
+              color: #075597;
+            }
+            .column{
+              .column-warp{
+                .column-rect{
+                  .column-text{
+                    color: #075597;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .day-task{
+    padding: 0 0.5rem;
+    margin-top: 0.5rem;
+    .top{
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 0.3rem;
+      .title{
+        font-size: 0.34rem;
+        color: #5da8cf;
+      }
+      .drsc{
+        font-size: 0.24rem;
+        color: #999999;
+        margin-top: 0.15rem;
+      }
+    }
+    .day-task-list{
+      .day-task-item{
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #f0f0f0;
+        .cont{
+          .title{
+            font-size: 0.3rem;
+            color: #222222;
+          }
+          .drsc{
+            font-size: 0.24rem;
+            color: #999999;
+            margin-top: 0.15rem;
+            span{
+              margin-left: 0.5rem;
+            }
+          }
+        }
+        .operate{
+          text-align: right;
+          img{
+            width: 1.61rem;
+            height: 0.58rem;
+          }
+        }
+      }
+    }
+  }
+}

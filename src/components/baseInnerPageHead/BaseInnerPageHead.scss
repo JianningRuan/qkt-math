@@ -1,0 +1,38 @@
+.inner-head {
+  height: 0.68rem;
+  margin-left: 0.48rem;
+  margin-right: 0.48rem;
+  margin-top: 0.32rem;
+  margin-bottom: 0.32rem;
+  position: relative;
+  line-height: 0.68rem;
+  text-align: center;
+  .head-tit {
+    max-width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .back-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0.68rem;
+    height: 0.68rem;
+    background: url("~@/assets/images/common/back-btn.png") left top no-repeat;
+    background-size: 1.46rem 0.68rem;
+    &:active {
+      background: url("~@/assets/images/common/back-btn.png") right top no-repeat;
+      background-size: 1.46rem 0.68rem;
+    }
+  }
+  .head-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

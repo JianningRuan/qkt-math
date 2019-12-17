@@ -1,0 +1,78 @@
+.index {
+  padding-bottom: 0.98rem;
+}
+
+.message-box {
+  padding-top: 0.24rem;
+  padding-bottom: 0.24rem;
+  background: #fff;
+  .user-box {
+    .user-head {
+      width: 0.88rem;
+      height: 0.88rem;
+      border: 0.04rem solid #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 0.15rem;
+      img {
+        width: 0.88rem;
+        height: 0.88rem;
+        border-radius: 50%;
+      }
+    }
+    .user-info {
+      h2 {
+        font-size: 0.34rem;
+        color: #333;
+        font-weight: normal;
+      }
+      .level-box {
+        width: 0.82rem;
+        height: 0.28rem;
+        background: #8cd2f6;
+        box-shadow: 0 0 2px 0 rgba(49, 158, 192, 0.35) inset;
+        border-radius: 0.14rem;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        .level-progress {
+          width: 0;
+          height: 0.28rem;
+          background: #46b1d2;
+          border-radius: 0.14rem;
+        }
+        .level-name {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0.82rem;
+          height: 0.28rem;
+          line-height: 0.28rem;
+          font-size: 0.2rem;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .bee-btn {
+    width: 0.75rem;
+    height: 0.86rem;
+    background: url("~@/assets/images/home/bee.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .calendar-btn {
+    width: 1.32rem;
+    height: 0.48rem;
+    border-radius: 0.24rem;
+    background: #eec248;
+    font-size: 0.24rem;
+    color: #fff;
+    box-shadow: 0 0 2px 0 rgba(221, 170, 28, 0.35) inset;
+    .calendar {
+      font-size: 0.34rem;
+      margin-right: 0.12rem;
+    }
+  }
+}

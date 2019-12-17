@@ -1,0 +1,186 @@
+.head-box {
+  height: 2.68rem;
+  background: #5ec2f5 url("~@/assets/images/my/center-head.png") bottom center no-repeat;
+  background-size: 100% 0.9rem;
+  padding-top: 0.22rem;
+  position: relative;
+  // padding-bottom: 0.62rem;
+  .user-head {
+    width: 1.18rem;
+    height: 1.18rem;
+    // border: 0.04rem solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.2rem;
+    img {
+      width: 1.18rem;
+      height: 1.18rem;
+      border-radius: 50%;
+    }
+  }
+  .user-name {
+    font-size: 0.34rem;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+
+    .level-btn {
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+      height: 0.28rem;
+      border-radius: 0.14rem;
+      background: #8cd2f6;
+      box-shadow: 0 0 2px 0 rgba(49, 158, 192, 0.35) inset;
+      color: #fff;
+      text-align: center;
+      line-height: 0.28rem;
+      font-size: 0.2rem;
+      display: inline-block;
+      margin-left: 0.2rem;
+    }
+  }
+  .sign-label {
+    height: 0.48rem;
+    font-size: 0.24rem;
+    line-height: 0.48rem;
+    color: #fff;
+    border-radius: 0.24rem 0 0 0.24rem;
+    background: #eec248;
+    padding-left: 0.26rem;
+    padding-right: 0.12rem;
+    position: absolute;
+    right: 0;
+    top: 0.33rem;
+  }
+
+  /*.level-box {
+    width: 1.68rem;
+    height: 0.48rem;
+    background: #54bbdb;
+    box-shadow: 0 0 2px 0 rgba(49, 158, 192, 0.35) inset;
+    border-radius: 0.24rem;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.2rem;
+    .level-progress {
+      width: 0;
+      height: 0.48rem;
+      background: #46b1d2;
+      border-radius: 0.24rem;
+    }
+    .level-name {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.68rem;
+      height: 0.48rem;
+      line-height: 0.48rem;
+      font-size: 0.24rem;
+      color: #fff;
+      text-align: center;
+    }
+  }*/
+}
+
+.my-intro {
+  height: 2rem;
+  border-bottom: 0.2rem solid #fbfafa;
+  .intro {
+    width: 1.1rem;
+    text-align: center;
+    padding-left: 0.44rem;
+    padding-right: 0.44rem;
+    .intro-icon {
+      width: 0.82rem;
+      height: 0.82rem;
+      border-radius: 0.3rem;
+      text-align: center;
+      line-height: 0.82rem;
+      color: #fff;
+      font-size: 0.44rem;
+      margin-left: auto;
+      margin-right: auto;
+      &.report-icon {
+        background: #80c8ff;
+      }
+      &.msg-icon {
+        background: #ff8f74;
+      }
+      svg {
+        color: #fff;
+      }
+    }
+    p {
+      font-size: 0.28rem;
+      color: #222;
+      line-height: 0.4rem;
+      padding-top: 0.1rem;
+    }
+  }
+}
+.setting-list {
+  .setting {
+    height: 1.1rem;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 0.48rem;
+    padding-right: 0.28rem;
+    .setting-cont {
+      font-size: 0.28rem;
+      color: #222;
+      .setting-icon {
+        color: #8cd2f6;
+        margin-right: 0.16rem;
+      }
+    }
+    .arrow-icon {
+      color: #999;
+      font-size: 0.3rem;
+    }
+  }
+}
+
+.my-menu {
+  margin-left: 0.48rem;
+  margin-right: 0.48rem;
+  .item {
+    height: 1.4rem;
+    border-radius: 0.25rem;
+    background: #d1efff;
+    padding-left: 0.4rem;
+    padding-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    .img {
+      width: 0.7rem;
+      height: 0.7rem;
+      margin-right: 0.25rem;
+      &.modify {
+        background: url("~@/assets/images/my/modify.png") 0 0 no-repeat;
+        background-size: 0.7rem 0.7rem;
+      }
+      &.msg {
+        background: url("~@/assets/images/my/msg.png") 0 0 no-repeat;
+        background-size: 0.7rem 0.7rem;
+      }
+      &.about {
+        background: url("~@/assets/images/my/about.png") 0 0 no-repeat;
+        background-size: 0.7rem 0.7rem;
+      }
+    }
+    span {
+      font-size: 0.34rem;
+      color: #5da8cf;
+    }
+    .right-icon {
+      font-size: 0.2rem;
+      color: #5da8cf;
+    }
+
+    &:active {
+      background: #b3e5ff;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.my-info-wrapper {
+  position: relative;
+  height: 3rem;
+  .light {
+    position: absolute;
+    left: 50%;
+    top: -0.66rem;
+    margin-left: -1.82rem;
+    width: 3.64rem;
+    height: 3.64rem;
+    background: url("~@/assets/images/level/light.png") 0 0 no-repeat;
+    background-size: 3.64rem 3.64rem;
+  }
+  .head-box {
+    width: 1.72rem;
+    height: 1.72rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 50%;
+    margin-left: -0.86rem;
+    z-index: 6;
+    .head-pic {
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 0.06rem solid #fff;
+      background: #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+      }
+    }
+  }
+  .ribbon-bg {
+    width: 2.54rem;
+    height: 0.68rem;
+    background: url("~@/assets/images/level/ribbon-bg.png") 0 0 no-repeat;
+    background-size: 2.54rem 0.68rem;
+    position: absolute;
+    top: 1.34rem;
+    left: 50%;
+    margin-left: -1.27rem;
+    z-index: 4;
+  }
+  .ribbon {
+    width: 2.54rem;
+    height: 0.68rem;
+    background: url("~@/assets/images/level/ribbon-after.png") 0 0 no-repeat;
+    background-size: 2.54rem 0.68rem;
+    position: absolute;
+    top: 1.34rem;
+    left: 50%;
+    margin-left: -1.27rem;
+    z-index: 7;
+    font-size: 0.28rem;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 0.16rem;
+    line-height: 0.52rem;
+  }
+  .my-level {
+    font-size: 0.28rem;
+    text-align: center;
+    color: #fff;
+    line-height: 0.46rem;
+    position: absolute;
+    bottom: 0.38rem;
+    left: 0;
+    right: 0;
+  }
+}
+
+.level-box {
+  background: #fff;
+  padding: 0.48rem 0.32rem;
+  h2 {
+    font-size: 0.34rem;
+    color: #5cc6fd;
+    font-weight: normal;
+    line-height: 0.46rem;
+  }
+  p {
+    font-size: 0.28rem;
+    color: #848c92;
+    line-height: 0.36rem;
+  }
+
+  .level-list {
+    .level-item {
+      line-height: 0.74rem;
+      height: 0.74rem;
+      &:nth-child(even) {
+        background: #e8f7ff;
+      }
+      .level {
+        padding-left: 0.25rem;
+        padding-right: 0.2rem;
+        font-size: 0.28rem;
+        color: #5cc6fd;
+      }
+      .name {
+        padding-right: 0.2rem;
+        font-size: 0.28rem;
+        color: #848c92;
+      }
+      .hp {
+        padding-right: 0.2rem;
+        font-size: 0.28rem;
+        color: #848c92;
+      }
+    }
+  }
+}

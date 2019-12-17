@@ -1,0 +1,58 @@
+.grade-btn {
+  font-size: 0.24rem;
+  color: #fff;
+}
+
+.task-cont {
+  height: 2.22rem;
+  background: #fff;
+  border-radius: 0.15rem;
+  padding: 0.32rem;
+  .task-pic {
+    width: 1.72rem;
+    height: 2.22rem;
+    border-radius: 0.1rem;
+    overflow: hidden;
+    margin-right: 0.32rem;
+    img {
+      width: 1.72rem;
+      height: 2.22rem;
+      overflow: hidden;
+    }
+  }
+  .task-info {
+    // width: 3.36rem;
+    .task-name {
+      h2 {
+        font-size: 0.34rem;
+        color: #848c92;
+        line-height: 0.38rem;
+        margin-bottom: 0.2rem;
+      }
+      p {
+        font-size: 0.28rem;
+        line-height: 0.36rem;
+        color: #848c92;
+        span {
+          color: #d9b60b;
+        }
+      }
+    }
+    .label-btn {
+      width: 1.62rem;
+      height: 0.58rem;
+      // display: block;
+      border-radius: 0.15rem;
+      background: #fce43a linear-gradient(#fce744,#f9d116);
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.58rem;
+      text-align: center;
+    }
+    .label-btn-end {
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.58rem;
+    }
+  }
+}

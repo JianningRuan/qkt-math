@@ -1,0 +1,20 @@
+.practice-tab {
+  background: #5ec2f5;
+  height: 1rem;
+
+  .practice-tab-item {
+    width: 1.48rem;
+    height: 0.6rem;
+    color: #fff;
+    font-size: 0.34rem;
+    line-height: 0.6rem;
+    text-align: center;
+    font-weight: bold;
+    &.current {
+      background: #fff;
+      border-radius: 0.3rem;
+      box-shadow: 0 0 0.1rem 0 rgba(215, 215, 215, 0.5) inset;
+      color: #5ec2f5;
+    }
+  }
+}

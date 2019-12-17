@@ -1,0 +1,519 @@
+.challenge {
+  // height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .top{
+    height: 0.84rem;
+    background: #dbecff;
+    padding: 0.24rem 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 0.15rem 0 #4ba9c6;
+    position: relative;
+    z-index: 3;
+    .top-item{
+      border-right: 0.01rem dashed #a8c6e3;
+      .top-item-warp{
+        height: 0.84rem;
+        .back-btn {
+          width: 0.68rem;
+          height: 0.68rem;
+          display: block;
+          margin-left: 0.48rem;
+          margin-right: 0.48rem;
+          border-radius: 50%;
+          background: url("~@/assets/images/common/back-btn.png") left top no-repeat;
+          background-size: 1.46rem 0.68rem;
+          &:active {
+            background: url("~@/assets/images/common/back-btn.png") right top no-repeat;
+            background-size: 1.46rem 0.68rem;
+          }
+        }
+        .cont{
+          position: relative;
+          margin: 0 auto;
+          font-size: 0;
+          .icon{
+            width: 0.64rem;
+            height: 0.64rem;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -0.32rem;
+            margin-left: -0.32rem;
+          }
+          .value{
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 0.48rem;
+            background: #a8c6e3;
+            width: 1.48rem;
+            border-radius: 0.24rem;
+            padding-left: 0.32rem;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 0.28rem;
+            color: #ffffff;
+            font-weight: 100;
+          }
+        }
+      }
+      &:last-child{
+        border-right: none;
+      }
+    }
+  }
+
+  .main-warp{
+    position: relative;
+    padding: 0.3rem;
+    .bg-top,.bg-bottom{
+      position: absolute;
+      z-index: 1;
+    }
+    .bg-top{
+      right: 0;
+      top: 0;
+      width: 0.7rem;
+      height: 4.40rem;
+      margin-right: -0.2rem;
+      margin-top: -0.5rem;
+    }
+    .bg-bottom{
+      left: 0;
+      bottom: 0;
+      width: 0.7rem;
+      height: 4.63rem;
+      margin-left: -0.2rem;
+      margin-bottom: -0.5rem;
+    }
+
+    .topic{
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      height: 3rem;
+      overflow: hidden;
+      .topic-list{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+        margin-top: 3rem;
+
+        .topic-item{
+          height: 3rem;
+          color: #ffffff;
+          font-size: 0.6rem;
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+          line-height: 0.7rem;
+          &.active{
+            opacity: 1;
+          }
+          .topic-item-warp{
+            margin: 0 auto;
+            position: relative;
+            span{
+              vertical-align: middle;
+            }
+            .result-num{
+              min-width: 0.9rem;
+              padding: 0 0.05rem;
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 0.7rem;
+              height: 0.7rem;
+              position: relative;
+              &:after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 0.04rem;
+                left: 0;
+                bottom: 0;
+                background: #ffffff;
+                margin-bottom: -0.04rem;
+              }
+              .value{
+                display: inline-block;
+                height: 0.7rem;
+              }
+
+              .cursor{
+                width: 0.04rem;
+                height: 0.5rem;
+                margin-left: 0.05rem;
+                vertical-align: middle;
+                background: #FFFFFF;
+                display: inline-block;
+                animation: cursor-animate 1s infinite;
+                -moz-animation: cursor-animate 1s infinite;	/* Firefox */
+                -webkit-animation: cursor-animate 1s infinite;	/* Safari 和 Chrome */
+                -o-animation: cursor-animate 1s infinite;	/* Opera */
+                animation-timing-function:ease-in-out;
+                vertical-align: middle;
+              }
+            }
+            .fraction{
+              display: inline-block;
+              margin-right: 0.3rem;
+              font-size: 0;
+              &.fraction-warp{
+                font-size: 0.4rem;
+              }
+
+              &:last-child{
+                margin-right: 0;
+              }
+              .fraction-left,.fraction-right{
+                display: inline-block !important;
+                vertical-align: middle;
+                font-size: 0;
+              }
+              .fraction-left{
+                margin-right: 0.15rem;
+              }
+              .fraction-warp{
+                font-size: 0.4rem !important;
+                display: block;
+              }
+              .fraction-line {
+                height: 0.04rem;
+                background: #fff;
+                margin: 0.1rem 0;
+              }
+              .fraction-result-warp {
+                display: block;
+                width: 1rem;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                border: 1px solid #fff;
+                .cursor{
+                  width: 1px;
+                  height: 0.3rem;
+                  background: #FFFFFF;
+                  display: inline-block;
+                  animation: cursor-animate 1s infinite;
+                  -moz-animation: cursor-animate 1s infinite;	/* Firefox */
+                  -webkit-animation: cursor-animate 1s infinite;	/* Safari 和 Chrome */
+                  -o-animation: cursor-animate 1s infinite;	/* Opera */
+                  animation-timing-function:ease-in-out;
+                  vertical-align: baseline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .result-icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    z-index: 3;
+    &.success{
+      width: 0.52rem;
+      height: 0.42rem;
+      margin-top: -0.21rem;
+    }
+    &.error{
+      width: 0.48rem;
+      height: 0.46rem;
+      margin-top: -0.23rem;
+    }
+  }
+
+  .keyboard{
+    background: #ffffff;
+    position: relative;
+    z-index: 3;
+    table{
+      width: 100%;
+      cellpadding:0.3rem;
+      cellspacing:0.3rem;
+      tr{
+        td{
+          width: 25%;
+          margin-right: 0.3rem;
+          height: 0.88rem;
+          line-height: 0.88rem;
+          background: #dbecff;
+          border-radius: 0.1rem;
+          a{
+            display: block;
+            text-align: center;
+            font-size: 0.3rem;
+            font-weight: bold;
+            color: #4ba9c6;
+            &:active{
+              border-radius: 0.1rem;
+              background: #8bd1e7;
+              color: #ffffff;
+            }
+          }
+          &.enter{
+            background: #9de5fa;
+            a{
+              // height: 100%;
+              height: 3.24rem;
+              color: #ffffff;
+              display: flex;
+              span{
+                margin: 0 auto;
+              }
+            }
+          }
+          &.enter-long{
+            background: #9de5fa;
+            a{
+              height: 100%;
+              // height: 3.24rem;
+              color: #ffffff;
+              display: flex;
+              span{
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .next-btn {
+      position: relative;
+      &:after {
+        content: '下一题';
+        position: absolute;
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+        font-size: 0.3rem;
+        color: #fff;
+        left: 0;
+        top: 50%;
+        margin-top: -0.2rem;
+      }
+    }
+  }
+}
+
+.tips-msg{
+  color: #340901;
+  font-size: 0.3rem;
+  text-indent: 0.6rem;
+  line-height: 0.5rem;
+  text-align: left;
+}
+.challenge-confirm-btn,.challenge-continue-btn{
+  width: 3.88rem;
+  height: 0.91rem;
+  margin-top: 0.1rem;
+}
+
+.tips-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  .mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9;
+  }
+  .tips-pop {
+    width: 5.9rem;
+    height: 5.86rem;
+    border-radius: 0.15rem;
+    background: #fff;
+    z-index: 10;
+    box-sizing: border-box;
+    padding-top: 0.42rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.95rem;
+    margin-top: -3.3rem;
+    .tips-tit {
+      text-align: center;
+      color: #2e3133;
+      font-size: 0.34rem;
+      font-weight: bold;
+      line-height: 0.68rem;
+    }
+    .tips-list {
+      padding-left: 0.64rem;
+      padding-right: 0.64rem;
+      padding-bottom: 0.4rem;
+      .tips-item {
+        font-size: 0.28rem;
+        color: #8a9399;
+        margin-bottom: 0.2rem;
+        .tips-icon {
+          width: 0.6rem;
+          height: 0.6rem;
+          margin-right: 0.14rem;
+          &.clock {
+            background: url("~@/assets/images/challenge/clock.png") center center no-repeat;
+            background-size: 0.54rem 0.54rem;
+          }
+          &.right {
+            background: url("~@/assets/images/challenge/right.png") center center no-repeat;
+            background-size: 0.54rem 0.54rem;
+          }
+          &.warning {
+            background: url("~@/assets/images/challenge/warning.png") center center no-repeat;
+            background-size: 0.59rem 0.51rem;
+          }
+        }
+      }
+    }
+    .start-btn {
+      margin-left: 0.64rem;
+      margin-right: 0.64rem;
+      height: 0.8rem;
+      line-height: 0.8rem;
+    }
+  }
+}
+
+.result-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  .mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9;
+  }
+  .result-pop {
+    width: 5.9rem;
+    height: 6.6rem;
+    border-radius: 0.15rem;
+    background: #fff url("~@/assets/images/challenge/result-box-bg.png") top center no-repeat;
+    background-size: 100% auto;
+    z-index: 10;
+    box-sizing: border-box;
+    padding-top: 0.9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.95rem;
+    margin-top: -3.3rem;
+    .result-tit {
+      width: 5.9rem;
+      height: 2.74rem;
+      position: absolute;
+      left: 0;
+      top: -2.2rem;
+      background: url("~@/assets/images/challenge/result-tit.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .result-star {
+      width: 3.88rem;
+      height: 1.08rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0.42rem;
+      .star {
+        width: 1.12rem;
+        height: 1.08rem;
+        background: url("~@/assets/images/challenge/result-star.png") top right no-repeat;
+        background-size: 2.44rem 1.08rem;
+        &.active {
+          background: url("~@/assets/images/challenge/result-star.png") top left no-repeat;
+          background-size: 2.44rem 1.08rem;
+        }
+      }
+    }
+    .result-main {
+      padding-left: 0.64rem;
+      padding-right: 0.64rem;
+      .result-tips {
+        line-height: 0.4rem;
+        font-size: 0.34rem;
+        color: #d9b60b;
+        margin-bottom: 0.62rem;
+        img {
+          width: 0.4rem;
+          height: 0.4rem;
+          margin-right: 0.18rem;
+        }
+      }
+      .result-flex {
+        margin-bottom: 0.64rem;
+        .result-item {
+          height: 0.54rem;
+          line-height: 0.54rem;
+          font-size: 0.28rem;
+          color: #8a9399;
+          img {
+            width: 0.54rem;
+            height: 0.54rem;
+            margin-right: 0.18rem;
+          }
+        }
+      }
+      .pop-btn {
+        display: block;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        border-radius: 0.15rem;
+        text-align: center;
+        font-size: 0.34rem;
+        color: #fff;
+        background: #79d0ff;
+        border-bottom: 0.08rem solid #34a8e6;
+        &:active {
+          background: #41bcff;
+        }
+      }
+      .back-btn {
+        display: block;
+        height: 0.88rem;
+        line-height: 0.88rem;
+        text-align: center;
+        font-size: 0.34rem;
+        color: #79d0ff;
+        &:active {
+          color: #34a8e6;
+        }
+      }
+    }
+  }
+}
+
+
+//光标动画
+@keyframes cursor-animate
+{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,155 @@
+.wrapper {
+  background: #97dbff url("~@/assets/images/bee/bee-bg.jpg") bottom center no-repeat;
+  background-size: 100% auto;
+  min-height: 100vh;
+  position: relative;
+}
+.box {
+  background: url("~@/assets/images/bee/sun.png") top right no-repeat;
+  background-size: 6rem 9.48rem;
+  overflow: hidden;
+}
+.calendar-box {
+  background: #fff;
+  padding-left: 0.32rem;
+  padding-right: 0.32rem;
+  padding-top: 0.32rem;
+  .calendar-banner {
+    border-radius: 0.15rem;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+    .calendar-banner-cont {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding-top: 0.32rem;
+      padding-left: 0.4rem;
+      h2 {
+        font-size: 0.34rem;
+        color: #fff;
+        font-weight: normal;
+        line-height: 0.46rem;
+        margin-bottom: 0.2rem;
+      }
+      p {
+        font-size: 0.28rem;
+        color: #fff;
+        line-height: 0.36rem;
+      }
+    }
+  }
+}
+
+
+
+#calendar{
+  width:5.9rem;
+}
+.month {
+  width: 5.9rem;
+}
+.month ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.year-month {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.year-month:active {
+  background: rgba(150, 2, 12, 0.1);
+}
+
+.month ul li.arrow {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.24rem;
+}
+
+.arrow:active {
+  background: rgba(100, 2, 12, 0.1);
+}
+
+.month ul li {
+  color: #848c92;
+  font-size: 0.34rem;
+  text-transform: uppercase;
+  // letter-spacing: 3px;
+}
+
+.weekdays {
+  width: 5.9rem;
+  margin: 0;
+  padding: 0.2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #848c92;
+  justify-content: space-around;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 0.5rem;
+  text-align: center;
+  font-size: 0.28rem;
+}
+
+.days {
+  padding: 0 0 0.2rem 0;
+  background: #fff;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 5.9rem;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 0.52rem;
+  height: 0.52rem;
+  margin: 0.15rem;
+  text-align: center;
+  font-size: 0.28rem;
+  color: #848c92;
+}
+
+.days li.point {
+  border-radius: 50%;
+  background: #8cd2f6;
+  color: #fff;
+}
+
+.days li span {
+  line-height: 0.52rem;
+  display: block;
+}
+
+.days li .active {
+  border-radius: 50%;
+  color: #8cd2f6;
+  box-sizing: border-box;
+}
+
+.days li .other-month {
+  color: gainsboro;
+}
+
+.days li:active {
+  background: #e1e1e1;
+}
+
+.days li.point .active {
+  color: #fff;
+}

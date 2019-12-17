@@ -1,0 +1,452 @@
+@import "~@/assets/styles/variable.scss";
+
+.out-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0.68rem;
+  height: 0.68rem;
+  background: url("~@/assets/images/task/out.png") left top no-repeat;
+  background-size: 1.46rem 0.68rem;
+  &:active {
+    background: url("~@/assets/images/task/out.png") right top no-repeat;
+    background-size: 1.46rem 0.68rem;
+  }
+}
+.task-cont {
+  height: 2.22rem;
+  background: #fff;
+  border-radius: 0.15rem;
+  padding: 0.32rem;
+  .task-pic {
+    width: 1.72rem;
+    height: 2.22rem;
+    border-radius: 0.1rem;
+    overflow: hidden;
+    margin-left: 0.32rem;
+    img {
+      width: 1.72rem;
+      height: 2.22rem;
+      overflow: hidden;
+    }
+  }
+  .task-info {
+    // width: 3.36rem;
+    .task-name {
+      h2 {
+        font-size: 0.34rem;
+        color: #848c92;
+        line-height: 0.38rem;
+        margin-bottom: 0.2rem;
+      }
+      p {
+        font-size: 0.28rem;
+        line-height: 0.36rem;
+        color: #848c92;
+        span {
+          color: #d9b60b;
+        }
+      }
+    }
+    .label-tips {
+      color: #8a9399;
+      font-size: 0.28rem;
+      line-height: 0.48rem;
+      em {
+        color: #d9b60b;
+      }
+      i {
+        font-style: normal;
+        color: #e5e5e5;
+        font-size: 0.24rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+      }
+
+      .flash {
+        display: inline-block;
+        width: 0.28rem;
+        height: 0.28rem;
+        background: #ffd714;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 0.24rem;
+        text-align: center;
+        line-height: 0.28rem;
+        margin-right: 0.16rem;
+      }
+    }
+  }
+}
+
+.task-detail {
+  background: #fff;
+  .task-journey {
+    padding-left: 0.32rem;
+    padding-right: 0.32rem;
+    .task-journey-tit {
+      height: 0.36rem;
+      padding-top: 0.26rem;
+      padding-bottom: 0.26rem;
+      line-height: 0.36rem;
+      font-size: 0.28rem;
+      .train-icon {
+        color: #8cd2f6;
+        margin-right: 0.1rem;
+      }
+      em {
+        color: #848c92;
+      }
+    }
+  }
+  .task-journey-cont {
+    width: 100%;
+    height: 1.18rem;
+    margin-bottom: 0.2rem;
+    .task-journey-scroll {
+      width: 100%;
+      height: 1.18rem;
+      overflow-x: auto;
+      white-space:nowrap;
+      line-height: 0;
+    }
+  }
+
+  .task-line-wrapper {
+    margin-left: 0.32rem;
+    margin-right: 0.32rem;
+    position: relative;
+    height: 0.11rem;
+    border-bottom: 0.01rem dashed #e5e5e5;
+    margin-bottom: 0.32rem;
+    &:before {
+      content: '';
+      width: 0.12rem;
+      height: 0.24rem;
+      border-radius: 0 0.12rem 0.12rem 0;
+      background: #8cd2f6;
+      position: absolute;
+      top: 0;
+      left: -0.32rem;
+    }
+    &:after {
+      content: '';
+      width: 0.12rem;
+      height: 0.24rem;
+      border-radius: 0.12rem 0 0 0.12rem;
+      background: #8cd2f6;
+      position: absolute;
+      top: 0;
+      right: -0.32rem;
+    }
+  }
+
+  .children-task {
+    padding-left: 0.32rem;
+    padding-right: 0.32rem;
+    .task-result {
+      width: 0.72rem;
+      height: 0.63rem;
+      &.pass {
+        background: url("~@/assets/images/task/pass.png") 0 0 no-repeat;
+        background-size: 0.72rem 0.63rem;
+      }
+      &.fail {
+        background: url("~@/assets/images/task/fail.png") 0 0 no-repeat;
+        background-size: 0.72rem 0.63rem;
+      }
+    }
+    .tit {
+      font-size: 0.4rem;
+      color: #8cd2f6;
+      line-height: 0.44rem;
+      margin-bottom: 0.46rem;
+      .flag-icon {
+        font-size: 0.36rem;
+        margin-right: 0.2rem;
+      }
+    }
+    .cont {
+      overflow: hidden;
+      .cont-list {
+        height: 0.66rem;
+        border-radius: 0.15rem;
+        background: #e8f7ff;
+        line-height: 0.66rem;
+        font-size: 0.28rem;
+        position: relative;
+        margin-left: 0.28rem;
+        padding-left: 0.5rem;
+        padding-right: 0.24rem;
+        margin-bottom: 0.32rem;
+        .list-tit {
+          color: #848c92;
+        }
+        .list-cont {
+          color: #8eceef;
+          img {
+            width: 0.32rem;
+            height: 0.32rem;
+            vertical-align: middle;
+            margin-right: 0.16rem;
+          }
+          .reward-status {
+            width: 0.4rem;
+            height: 0.4rem;
+            display: inline-block;
+            text-align: center;
+            line-height: 0.4rem;
+            border-radius: 50%;
+            background: #d6effc;
+            color: #fff;
+            font-size: 0.2rem;
+            margin-left: 0.15rem;
+            &.finish {
+              background: #8eceef;
+            }
+          }
+        }
+        .list-pic {
+          position: absolute;
+          top: -0.04rem;
+          left: -0.28rem;
+          width: 0.58rem;
+          height: 0.74rem;
+          &.book-pic {
+            background: url("~@/assets/images/task/book.png") 0 0 no-repeat;
+            background-size: 0.58rem 0.74rem;
+          }
+          &.star-pic {
+            background: url("~@/assets/images/task/star.png") 0 0 no-repeat;
+            background-size: 0.58rem 0.74rem;
+          }
+        }
+      }
+    }
+
+    .join-btn {
+      display: block;
+      width: 100%;
+      height: 0.8rem;
+      border-bottom: 0.08rem solid #34a8e6;
+      background: #79d0ff url("~@/assets/images/home/btn-light.png") 0 0 no-repeat;
+      background-size: 0.24rem 0.24rem;
+      line-height: 0.8rem;
+      border-radius: 0.15rem;
+      font-size: 0.34rem;
+      text-align: center;
+      color: #fff;
+      .loading {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.1rem;
+      }
+    }
+  }
+}
+
+.car-box {
+  display: inline-block;
+  width: 0.76rem;
+  height: 0.93rem;
+  padding-top: 0.05rem;
+  background: #e2e2e2;
+  border-radius: 0.1rem;
+  position: relative;
+  margin-bottom: 0.17rem;
+  margin-right: 0.1rem;
+  &:after {
+    content: '';
+    width: 0.1rem;
+    height: 0.04rem;
+    background: #e2e2e2;
+    position: absolute;
+    right: -0.1rem;
+    bottom: 0.12rem;
+  }
+  .car-day {
+    margin: 0 0.05rem;
+    width: 0.66rem;
+    height: 0.5rem;
+    border-radius: 0.1rem;
+    background: #d5d5d5;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    color: #fff;
+  }
+  .car-fraction {
+    width: 0.34rem;
+    height: 0.34rem;
+    background: #d5d5d5;
+    border-radius: 50%;
+    border: 0.03rem solid #fff;
+    position: absolute;
+    bottom: -0.17rem;
+    left: 0.17rem;
+    font-size: 0.18rem;
+    text-align: center;
+    line-height: 0.34rem;
+    color: #fff;
+    .great-icon {
+      color: #fff;
+    }
+    img {
+      width: 0.21rem;
+      height: 0.18rem;
+    }
+  }
+
+  &:last-child {
+    border-radius: 0.1rem 0.4rem 0.1rem 0.1rem;
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+    }
+    .car-day {
+      border-radius: 0.1rem 0.4rem 0.1rem 0.1rem;
+    }
+  }
+
+  &.car-box-1 {
+    &.current {
+      background: #8ef566;
+      .car-day {
+        background: #6ae13b;
+      }
+      .car-fraction {
+        background: #8ef566;
+      }
+    }
+    &.finish {
+      background: #8ef566;
+      .car-day {
+        background: #6ae13b;
+      }
+      .car-fraction {
+        background: #8ef566;
+      }
+    }
+  }
+  &.car-box-2 {
+    &.current {
+      background: #e0f265;
+      .car-day {
+        background: #c7db3e;
+      }
+      .car-fraction {
+        background: #e0f265;
+      }
+    }
+    &.finish {
+      background: #e0f265;
+      .car-day {
+        background: #c7db3e;
+      }
+      .car-fraction {
+        background: #e0f265;
+      }
+    }
+  }
+  &.car-box-3 {
+    &.current {
+      background: #f38790;
+      .car-day {
+        background: #dc636d;
+      }
+      .car-fraction {
+        background: #f38790;
+      }
+    }
+    &.finish {
+      background: #f38790;
+      .car-day {
+        background: #dc636d;
+      }
+      .car-fraction {
+        background: #f38790;
+      }
+    }
+  }
+  &.car-box-4 {
+    &.current {
+      background: #f0c166;
+      .car-day {
+        background: #f09d21;
+      }
+      .car-fraction {
+        background: #f0c166;
+      }
+    }
+    &.finish {
+      background: #f0c166;
+      .car-day {
+        background: #f09d21;
+      }
+      .car-fraction {
+        background: #f0c166;
+      }
+    }
+  }
+  &.car-box-5 {
+    &.current {
+      background: #9ae4ff;
+      .car-day {
+        background: #78cdec;
+      }
+      .car-fraction {
+        background: #9ae4ff;
+      }
+    }
+    &.finish {
+      background: #9ae4ff;
+      .car-day {
+        background: #78cdec;
+      }
+      .car-fraction {
+        background: #9ae4ff;
+      }
+    }
+  }
+  &.car-box-6 {
+    &.current {
+      background: #8be1d0;
+      .car-day {
+        background: #67d0bb;
+      }
+      .car-fraction {
+        background: #8be1d0;
+      }
+    }
+    &.finish {
+      background: #8be1d0;
+      .car-day {
+        background: #67d0bb;
+      }
+      .car-fraction {
+        background: #8be1d0;
+      }
+    }
+  }
+  &.car-box-7 {
+    &.current {
+      background: #9ac7ff;
+      .car-day {
+        background: #7cb2f5;
+      }
+      .car-fraction {
+        background: #9ac7ff;
+      }
+    }
+    &.finish {
+      background: #9ac7ff;
+      .car-day {
+        background: #7cb2f5;
+      }
+      .car-fraction {
+        background: #9ac7ff;
+      }
+    }
+  }
+}

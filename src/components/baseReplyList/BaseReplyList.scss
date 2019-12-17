@@ -1,0 +1,125 @@
+@import "~@/assets/styles/variable.scss";
+
+.comment-wrapper {}
+.no-comment {
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #666;
+}
+.comment {
+  border-bottom: 1px solid $lineColor;
+  .comment-head-pic {
+    width: 0.68rem;
+    height: 0.68rem;
+    border-radius: 0.34rem;
+    overflow: hidden;
+    margin-right: 0.15rem;
+    font-size: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.34rem;
+    }
+  }
+  .comment-cont {
+    .comment-box {
+      padding-bottom: 0.1rem;
+      .comment-name {
+        font-size: 0.28rem;
+        line-height: 0.4rem;
+        color: #5da8cf;
+
+        span {
+          font-size: 0.24rem;
+          color: #666;
+        }
+      }
+      .study-time {
+        font-size: 0.24rem;
+        color: #666;
+        margin-bottom: 0.1rem;
+      }
+      .comment-msg {
+        font-size: 0.28rem;
+        color: #666;
+        line-height: 0.4rem;
+      }
+      .comment-pic {
+        width: 2.66rem;
+        padding-bottom: 0.1rem;
+        padding-top: 0.1rem;
+        img {
+          width: 100%;
+        }
+      }
+      .comment-opa {
+        padding-top: 0.1rem;
+        span {
+          display: inline-block;
+        }
+        .opa-btn {
+          font-size: 0.28rem;
+          color: #666;
+          svg {
+            font-size: 0.4rem;
+            margin-right: 0.06rem;
+            &.orange-color {
+              color: $orangeColor;
+            }
+          }
+        }
+      }
+    }
+    .comment-reply-wrapper {
+      // max-height: 3.9rem;
+      overflow: hidden;
+
+      &.show-more {
+        max-height: none;
+      }
+    }
+    .comment-reply {
+      margin-bottom: 0.1rem;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+      border-top: 1px solid $lineColor;
+      .comment-name {
+        font-size: 0.28rem;
+        line-height: 0.6rem;
+        color: #5da8cf;
+        span {
+          font-size: 0.24rem;
+          color: #666;
+        }
+      }
+      .comment-msg {
+        font-size: 0.28rem;
+        color: #666;
+        line-height: 0.4rem;
+      }
+      .comment-pic {
+        width: 2.66rem;
+        padding-bottom: 0.1rem;
+        padding-top: 0.1rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .more {
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+      width: 2.2rem;
+      display: block;
+      font-size: 0.24rem;
+      color: #666;
+      svg {
+        font-size: 0.24rem;
+        margin-left: 0.1rem;
+      }
+    }
+  }
+}

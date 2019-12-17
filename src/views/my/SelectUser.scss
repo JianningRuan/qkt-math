@@ -1,0 +1,57 @@
+
+
+.user-list {
+  padding-top: 0.24rem;
+  padding-bottom: 0.52rem;
+  .user {
+    height: 1.38rem;
+    .user-info {
+      .user-avatar {
+        width: 0.88rem;
+        height: 0.88rem;
+        border-radius: 0.44rem;
+        overflow: hidden;
+        margin-right: 0.2rem;
+        img {
+          width: 0.88rem;
+          height: 0.88rem;
+          display: block;
+        }
+      }
+      span {
+        font-size: 0.34rem;
+        color: #333;
+      }
+    }
+    .selected {
+      width: 0.48rem;
+      height: 0.48rem;
+      border-radius: 50%;
+      border: 0.02rem solid #dbdbdb;
+      text-align: center;
+      line-height: 0.48rem;
+      font-size: 0.28rem;
+      &.current {
+        border: 0.02rem solid #8cd2f6;
+        svg {
+          color: #8cd2f6;
+        }
+      }
+    }
+  }
+}
+
+.create-btn {
+  width: 2.72rem;
+  height: 0.72rem;
+  border: 1px solid #8cd2f6;
+  border-radius: 0.14rem;
+  color: #5ec2f5;
+  font-size: 0.34rem;
+  margin-left: auto;
+  margin-right: auto;
+  svg {
+    color: #91d4f6;
+    margin-right: 0.14rem;
+  }
+}

@@ -1,0 +1,19 @@
+$mainFontColor: #5da8cf;
+$titColor: #222;
+$fontColor: #999;
+$yellowColor: #ffa019;
+$orangeColor: #fe911d;
+$lineColor: #e7e7e7;
+
+.text-over-ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin line-clamp($num) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+}

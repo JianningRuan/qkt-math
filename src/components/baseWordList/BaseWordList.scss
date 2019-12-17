@@ -1,0 +1,43 @@
+.audio-list {
+  .audio-item {
+    height: 1.16rem;
+    background: #e8f7ff;
+    &:nth-child(2n) {
+      background: #fff;
+    }
+
+    .audio-btn {
+      width: 0.4rem;
+      height: 0.34rem;
+      background: url("~@/assets/images/word/play.png") 0 0 no-repeat;
+      background-size: 0.4rem 0.34rem;
+      margin-left: 0.3rem;
+      &.play {
+        background: url("~@/assets/images/word/play.gif") 0 0 no-repeat;
+        background-size: 0.4rem 0.34rem;
+      }
+    }
+    .word {
+      padding-left: 0.28rem;
+      h2 {
+        font-size: 0.34rem;
+        color: #8cd2f6;
+        line-height: 0.5rem;
+      }
+      p {
+        font-size: 0.28rem;
+        color: #848c92;
+        line-height: 0.48rem;
+      }
+    }
+    .word-type {
+      padding-left: 0.38rem;
+      padding-right: 0.38rem;
+      font-size: 0.28rem;
+      color: #848c92;
+      &.study {
+        color: #e97673;
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import "./../../assets/styles/variable";
+
+.tab-wrapper {
+  overflow: hidden;
+  position: sticky;
+  top: 1.32rem;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background: #8cd2f6;
+}
+.tab {
+  width: 4.8rem;
+  height: 0.68rem;
+  background: #8cd2f6;
+  border-radius: 0.25rem;
+  border: 0.04rem solid #d1efff;
+  box-shadow: 0 0.06rem 0 0 #7ec6ec;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.36rem;
+  overflow: hidden;
+  .tab-item {
+    line-height: 0.68rem;
+    text-align: center;
+    font-size: 0.34rem;
+    color: #fff;
+    em {
+      width: 0.28rem;
+      height: 0.28rem;
+      background: url("~@/assets/images/task/l-star.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+      margin-right: 0.1rem;
+      display: none;
+    }
+    &.current {
+      background: #74c5ef;
+      em {
+        display: block;
+      }
+    }
+  }
+}
+
+.book-box {
+  padding: 0.32rem;
+  .book-avatar {
+    width: 1.72rem;
+    height: 2.22rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    margin-right: 0.24rem;
+    img {
+      width: 1.72rem;
+      height: 2.22rem;
+      display: block;
+    }
+    .label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0.76rem;
+      height: 0.74rem;
+      &.ing-label {
+        background: url("~@/assets/images/word/ing.png") 0 0 no-repeat;
+        background-size: 0.76rem 0.74rem;
+      }
+      &.finish-label {
+        background: url("~@/assets/images/word/finish.png") 0 0 no-repeat;
+        background-size: 0.76rem 0.74rem;
+      }
+    }
+  }
+  .book-info {
+    h2 {
+      color: #848c92;
+      font-size: 0.34rem;
+      line-height: 0.4rem;
+      margin-bottom: 0.1rem;
+    }
+    .change {
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 0.2rem;
+      background: #8eceef;
+      text-align: center;
+      line-height: 0.4rem;
+      color: #fff;
+      font-size: 0.24rem;
+    }
+    p {
+      font-size: 0.28rem;
+      color: #848c92;
+      line-height: 0.5rem;
+      em {
+        color: #d9b60b;
+      }
+    }
+    .study-msg {
+      p {
+
+      }
+      .study-progress {
+        height: 0.26rem;
+        border-radius: 0.13rem;
+        box-shadow: inset 0 1px 2px 0 rgba(49, 158, 192, 0.3);
+        background: #dfe2e5;
+        .progress {
+          width: 0;
+          height: 0.26rem;
+          border-radius: 0.13rem;
+          background: #79d0ff;
+        }
+      }
+    }
+  }
+}
+
+.book-cont {
+  height: 2.22rem;
+  background: #fff;
+  border-radius: 0.15rem;
+  padding: 0.32rem;
+  .task-pic {
+    width: 1.72rem;
+    height: 2.22rem;
+    border-radius: 0.1rem;
+    overflow: hidden;
+    margin-right: 0.32rem;
+    img {
+      width: 1.72rem;
+      height: 2.22rem;
+      overflow: hidden;
+    }
+  }
+  .task-info {
+    // width: 3.36rem;
+    .task-name {
+      h2 {
+        font-size: 0.34rem;
+        color: #848c92;
+        line-height: 0.38rem;
+        margin-bottom: 0.2rem;
+      }
+      p {
+        font-size: 0.28rem;
+        line-height: 0.36rem;
+        color: #848c92;
+        span {
+          color: #d9b60b;
+        }
+      }
+    }
+    .label-btn {
+      width: 1.6rem;
+      height: 0.64rem;
+      // display: block;
+      border-radius: 0.15rem;
+      background: #fcd644;
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.64rem;
+      text-align: center;
+      border-bottom: 0.08rem solid #e0c722;
+    }
+    .label-btn-end {
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.58rem;
+    }
+  }
+}

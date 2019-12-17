@@ -1,0 +1,26 @@
+.fever {
+  overflow: hidden;
+  height: 100vh;
+  background: #8dd3f7 url("~@/assets/images/test/test-welcome.jpg") top center no-repeat;
+  background-size: 100% auto;
+}
+
+.start-btn {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 0.34rem;
+  color: #fff;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.5rem;
+  display: block;
+  background: #79d0ff url("~@/assets/images/test/welcome-btn-light.png") 0 0 no-repeat;
+  background-size: 0.56rem 0.56rem;
+  border-bottom: 0.08rem solid #34a8e6;
+  &:active {
+    background: #41bcff url("~@/assets/images/test/welcome-btn-light.png") 0 0 no-repeat;
+    background-size: 0.56rem 0.56rem;
+  }
+}

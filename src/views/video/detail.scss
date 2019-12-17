@@ -1,0 +1,119 @@
+@import "~@/assets/styles/variable.scss";
+#video-detail{
+  background: #8cd2f6;
+  min-height: 100vh;
+  .video{
+    .cover{
+      width: 100%;
+    }
+    video{
+      width: 100%;
+    }
+  }
+  .tab{
+    a{
+      background: #5ec2f5;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1rem;
+      font-size: 0.32rem;
+      &:first-child{
+        border-right: 1px solid rgba(255,255,255,0.2);
+      }
+      &.active{
+        font-weight: bold;
+      }
+    }
+  }
+
+  .profile{
+    .video-profile{
+      padding: 0.3rem;
+      border-bottom: 1px solid #c5d9e4;
+      .top{
+        .title{
+          font-size: 0.4rem;
+          color: #ffffff;
+          min-width: 0;
+          margin-right: 0.1rem;
+          @extend .text-over-ellipsis;
+        }
+        .more{
+          color: #ffffff;
+          font-size: 0.28rem;
+          font-weight: 100;
+          svg{
+            margin-left: 0.05rem;
+          }
+        }
+      }
+      .content{
+        margin-top: 0.4rem;
+        color: #093868;
+        text-indent: 2em;
+        line-height: 0.5rem;
+      }
+      .msg{
+        margin-top: 0.3rem;
+        .hot-comment{
+          font-size: 0.24rem;
+          span{
+            color: #f82f00;
+          }
+          img{
+            display: inline-block;
+            vertical-align: middle;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background: #ffffff;
+            margin-right: 0.1rem;
+          }
+        }
+        .operate{
+          text-align: right;
+          color: #ffffff;
+          font-size: 0.24rem;
+          a{
+            margin-right: .15rem;
+            &.active{
+              // color: #f82f00;
+            }
+          }
+          svg{
+            width:.35rem;
+            height: .35rem;
+            margin-right: 0.05rem;
+            display: inline-block;
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+
+    .course{
+      padding: 0.3rem;
+      .top-title{
+        color: #ffffff;
+        font-size: 0.4rem;
+      }
+      .course-list{
+        margin-top: 0.3rem;
+        .more{
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+
+.video-player-box{
+  width: 100%;
+  height: 5.7rem;
+}
+.video-js{
+  width: 100%;
+}
+

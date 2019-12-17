@@ -1,0 +1,74 @@
+.wrapper {
+  min-height: 100vh;
+  padding: 0.48rem;
+  box-sizing: border-box;
+}
+
+.register-banner-views {
+  height: 2.74rem;
+  padding-left: 0.3rem;
+  background: url("~@/assets/images/login/arranging_files.png") top right no-repeat;
+  background-size: 2.03rem 2.26rem;
+  .title {
+    font-size: 0.42rem;
+    color: #fff;
+    line-height: 0.8rem;
+  }
+  .cont {
+    width: 3.2rem;
+    font-size: 0.28rem;
+    color: #fff;
+    line-height: 0.42rem;
+    span {
+      color: #fcff00;
+    }
+  }
+}
+
+.data-box {
+  background: #fff;
+  padding: 0.32rem;
+  .input-box {
+    border-bottom: 0.01rem solid #e5e5e5;
+    height: 0.9rem;
+    margin-bottom: 0.24rem;
+    .label {
+      font-size: 0.34rem;
+      color: #848c92;
+    }
+    input {
+      width: 100%;
+      font-size: 0.34rem;
+      border: 0;
+      line-height: 0.42rem;
+      text-align: right;
+    }
+    .right-icon {
+      width: 0.2rem;
+      height: 0.28rem;
+      text-align: center;
+      line-height: 0.28rem;
+      font-size: 0.2rem;
+      color: #848c92;
+      margin-left: 0.12rem;
+    }
+    .avatar {
+      width: 0.6rem;
+      height: 0.6rem;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 1px solid #dfdfdf;
+      img {
+        width: 0.6rem;
+        height: 0.6rem;
+        display: block;
+      }
+    }
+  }
+
+  .submit-btn {
+    height: 0.8rem;
+    line-height: 0.8rem;
+  }
+}
+

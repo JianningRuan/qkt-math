@@ -1,0 +1,239 @@
+.activity-detail {
+  padding-top: 0.24rem;
+  padding-bottom: 0.24rem;
+  h1 {
+    font-size: 0.38rem;
+    color: #222;
+    line-height: 0.72rem;
+  }
+  .activity-info {
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.4rem;
+  }
+  .micro-pic {
+    width: 100%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .activity-cont {
+    font-size: 0.24rem;
+    line-height: 0.42rem;
+    color: #222;
+    img {
+      max-width: 100% !important;
+      display: block;
+    }
+    /deep/ img {
+      max-width: 100% !important;
+      display: block;
+    }
+  }
+
+  .join-box {
+    .join-btn {
+      height: 0.84rem;
+      line-height: 0.84rem;
+      font-size: 0.42rem;
+      border-bottom: 0.04rem solid #34a8e6;
+    }
+    .joined-btn {
+      height: 0.84rem;
+      line-height: 0.84rem;
+      font-size: 0.42rem;
+      border-bottom: 0.04rem solid #afafaf;
+      background: #c3c3c3;
+    }
+
+    p {
+      font-size: 0.28rem;
+      text-align: center;
+      color: #0d4d89;
+      line-height: 0.42rem;
+    }
+  }
+
+}
+
+.audio-main {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  .audio-cover {
+    padding-bottom: 0.52rem;
+    .cover {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  .progress-wrapper {
+    height: 0.02rem;
+    width: 100%;
+    background: #afe0f9;
+    position: relative;
+    margin-top: 0.14rem;
+    margin-bottom: 0.14rem;
+    &:before {
+      content: '';
+      width: 0.06rem;
+      height: 0.06rem;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: -0.02rem;
+      left: 0;
+      z-index: 1;
+    }
+    &:after {
+      content: '';
+      width: 0.06rem;
+      height: 0.06rem;
+      border-radius: 50%;
+      background: #afe0f9;
+      position: absolute;
+      top: -0.02rem;
+      right: 0;
+      z-index: 1;
+    }
+
+    .progress {
+      height: 0.02rem;
+      margin-right: 1.08rem;
+      .progress-line {
+        height: 0.02rem;
+        width: 0;
+        background: #fff;
+        position: relative;
+        .progress-btn {
+          position: absolute;
+          right: -1.08rem;
+          top: -0.12rem;
+          width: 1.08rem;
+          height: 0.24rem;
+          line-height: 0.24rem;
+          text-align: center;
+          border-radius: 0.15rem;
+          font-size: 0.14rem;
+          color: #462808;
+          background: #fff;
+          z-index: 4;
+        }
+      }
+    }
+  }
+}
+
+.play-wrapper {
+  height: 0.96rem;
+  padding-bottom: 0.24rem;
+  .play-btn {
+    width: 0.62rem;
+    height: 0.62rem;
+    font-size: 0.48rem;
+    text-align: center;
+    line-height: 0.62rem;
+    color: #fff;
+  }
+}
+
+.micro-box {
+  background: #fff;
+  padding: 0.2rem 0.3rem;
+  position: relative;
+  &.bb {
+    border-bottom: 0.2rem solid #f3f3f5;
+  }
+  h1 {
+    font-size: 0.36rem;
+    color: #222;
+    line-height: 0.64rem;
+  }
+  h5 {
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.46rem;
+    font-weight: normal;
+  }
+
+  .tit {
+    font-size: 0.36rem;
+    color: #5da8cf;
+    line-height: 0.66rem;
+  }
+  .author-box {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    .author-avatar {
+      width: 0.92rem;
+      height: 0.92rem;
+      border-radius: 0.46rem;
+      overflow: hidden;
+      margin-right: 0.26rem;
+      img {
+        width: 0.92rem;
+        height: 0.92rem;
+      }
+    }
+    .author-cont {
+      h2 {
+        font-size: 0.3rem;
+        color: #222;
+      }
+      p {
+        font-size: 0.24rem;
+        color: #666;
+      }
+    }
+  }
+  .author-share {
+    background: #f6f6f8;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    position: relative;
+    line-height: 0.4rem;
+    font-size: 0.24rem;
+    color: #222;
+    margin-bottom: 0.2rem;
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left:0.1rem solid transparent;
+      border-right:0.1rem solid transparent;
+      border-bottom:0.12rem solid #f6f6f8;
+      position: absolute;
+      top: -0.12rem;
+      left: 0.44rem;
+    }
+  }
+
+  .cont {
+    font-size: 0.24rem;
+    color: #222;
+    line-height: 0.44rem;
+    padding-bottom: 0.1rem;
+    padding-top: 0.2rem;
+    &.set-height {
+      height: 7rem;
+      overflow: hidden;
+    }
+  }
+  .more {
+    height: 0.52rem;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+    color: #c5c5c5;
+    font-size: 0.24rem;
+    line-height: 0.52rem;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    svg {
+      color: #c5c5c5;
+      margin-right: 0.2rem;
+    }
+  }
+}

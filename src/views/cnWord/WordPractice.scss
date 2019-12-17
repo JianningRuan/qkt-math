@@ -1,0 +1,248 @@
+@import "./../../assets/styles/variable";
+
+.word-box {
+  .lesson-main {
+    height: 5.2rem;
+    position: relative;
+
+    .lesson-tit {
+      height: 1.1rem;
+      border-bottom: 1px dashed $lineColor;
+      .tit {
+        font-size: 0.34rem;
+        color: $mainFontColor;
+      }
+      .change {
+        color: #b8c2ca;
+        font-size: 0.22rem;
+        svg {
+          margin-left: 0.1rem;
+        }
+      }
+    }
+
+    .lesson-msg {
+      padding-bottom: 0.92rem;
+      .lesson-avatar {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.14rem;
+        &.no-lesson {
+          background: url("~@/assets/images/word/word-avatar1.png") 0 0 no-repeat;
+          background-size: 1.4rem 1.4rem;
+        }
+        &.finish-lesson {
+          background: url("~@/assets/images/word/word-avatar2.png") 0 0 no-repeat;
+          background-size: 1.4rem 1.4rem;
+        }
+      }
+      .msg-tit {
+        text-align: center;
+        font-size: 0.34rem;
+        color: $mainFontColor;
+        line-height: 0.64rem;
+      }
+      .msg-tips {
+        text-align: center;
+        font-size: 0.28rem;
+        color: #5c6266;
+        line-height: 0.54rem;
+      }
+    }
+
+    .lesson-finish-msg {
+      padding-bottom: 0.92rem;
+      .lesson-avatar {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.14rem;
+        &.no-lesson {
+          background: url("~@/assets/images/word/word-avatar1.png") 0 0 no-repeat;
+          background-size: 1.8rem 1.8rem;
+        }
+        &.finish-lesson {
+          background: url("~@/assets/images/word/word-avatar2.png") 0 0 no-repeat;
+          background-size: 1.8rem 1.8rem;
+        }
+      }
+      .msg-tit {
+        text-align: center;
+        font-size: 0.34rem;
+        color: $mainFontColor;
+        line-height: 0.64rem;
+      }
+      .msg-tips {
+        text-align: center;
+        font-size: 0.28rem;
+        color: #5c6266;
+        line-height: 0.54rem;
+      }
+    }
+
+    .none {}
+
+    .study-box {
+      margin-left: 0.74rem;
+      margin-right: 0.74rem;
+      margin-top: 0.5rem;
+      .num-box {
+        width: 2.36rem;
+        height: 2.55rem;
+        box-shadow: 0 0 0.2rem 0 rgba(154, 210, 243, 0.35);
+        h3 {
+          font-size: 1.2rem;
+          color: #5cc6fd;
+          line-height: 1.34rem;
+          font-weight: normal;
+        }
+        p {
+          font-size: 0.28rem;
+          color: #848c92;
+          line-height: 0.6rem;
+        }
+      }
+    }
+
+    .progress-box {
+      position: absolute;
+      bottom: -0.04rem;
+      left: 0;
+      right: 0;
+      .progress-msg {
+        height: 0.82rem;
+        .progress-num {
+          font-size: 0.28rem;
+          color: #848c92;
+        }
+        .more {
+          color: #b8c2ca;
+          font-size: 0.22rem;
+          .right {
+            margin-left: 0.14rem;
+          }
+        }
+      }
+      .progress-line-wrapper {
+        height: 0.04rem;
+        width: 100%;
+        background: #cfdbe0;
+        box-shadow: inset 1px 0 1px 0 rgba(49, 158, 192, 0.35);
+        .progress-line {
+          height: 0.04rem;
+          width: 0;
+          background: #fbdf26;
+          position: relative;
+          .bee {
+            width: 0.2rem;
+            height: 0.24rem;
+            background: url("~@/assets/images/word/bee.png") 0 0 no-repeat;
+            background-size: 0.2rem 0.24rem;
+            position: absolute;
+            top: 50%;
+            right: -0.1rem;
+            margin-top: -0.12rem;
+          }
+        }
+      }
+    }
+  }
+
+  .lesson-bottom {
+    height: 2.1rem;
+    border-radius: 0 0 0.2rem 0.2rem;
+    background: url("~@/assets/images/word/lesson-bottom.png") 0 0 no-repeat;
+    background-size: 100% 2.1rem;
+
+    .main {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 0.22rem;
+      .reset-btn {
+        width: 1.98rem;
+        display: block;
+        border: 0.03rem solid #ffd447;
+        border-radius: 0.41rem;
+        height: 0.82rem;
+        line-height: 0.82rem;
+        text-align: center;
+        font-size: 0.34rem;
+        color: #ffd447;
+        margin-right: 0.26rem;
+      }
+      .start-btn {
+        height: 0.88rem;
+        // display: block;
+        background: #fce43a linear-gradient(#fce744, #f9d116);
+        border-radius: 0.44rem;
+        // text-align: center;
+        line-height: 0.88rem;
+        font-size: 0.34rem;
+        color: #fff;
+        position: relative;
+        .right {
+          width: 0.54rem;
+          height: 0.54rem;
+          border-radius: 0.27rem;
+          display: block;
+          background: #fff;
+          color: #ffcc33;
+          font-size: 0.34rem;
+          font-weight: bold;
+          text-align: center;
+          line-height: 0.54rem;
+          &.absolute {
+            position: absolute;
+            right: 0.16rem;
+            top: 0.17rem;
+          }
+        }
+        &:active {
+          background: #fce43a linear-gradient(#f9d116, #f9d116);
+        }
+      }
+    }
+    .tips {
+      line-height: 0.28rem;
+      text-align: center;
+      font-size: 0.24rem;
+      color: #999;
+      svg {
+        color: #f7ba2a;
+        margin-right: 0.14rem;
+        font-size: 0.28rem;
+      }
+    }
+  }
+}
+
+
+.check-box {
+  width: 100%;
+  height: 1rem;
+  border-radius: 0.25rem;
+  background: rgba(208, 244, 255, 0.85) url("~@/assets/images/find/box-bg2.png") right bottom no-repeat;
+  background-size: 2.08rem 1rem;
+  position: relative;
+  overflow: hidden;
+  .check-btn {
+    padding-left: 0.42rem;
+    font-size: 0.28rem;
+    color: #46b1d2;
+    svg {
+      margin-left: 0.14rem;
+    }
+  }
+  .label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url("~@/assets/images/word/word-label.png") 0 0 no-repeat;
+    background-size: 0.7rem 0.7rem;
+  }
+}

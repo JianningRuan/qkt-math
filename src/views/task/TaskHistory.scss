@@ -1,0 +1,124 @@
+.switch-btn {
+  font-size: 0.28rem;
+  color: #fff;
+  span {
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    background: #fff;
+    border-radius: 50%;
+    color: #8cd2f6;
+    text-align: center;
+    margin-right: 0.16rem;
+  }
+}
+
+.tab {
+  width: 3.96rem;
+  height: 0.68rem;
+  background: #8cd2f6;
+  border-radius: 0.25rem;
+  border: 0.04rem solid #d1efff;
+  box-shadow: 0 0.06rem 0 0 #7ec6ec;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.36rem;
+  overflow: hidden;
+  .tab-item {
+    line-height: 0.68rem;
+    text-align: center;
+    font-size: 0.34rem;
+    color: #fff;
+    em {
+      width: 0.28rem;
+      height: 0.28rem;
+      background: url("~@/assets/images/task/l-star.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+      margin-right: 0.1rem;
+      display: none;
+    }
+    &.current {
+      background: #74c5ef;
+      em {
+        display: block;
+      }
+    }
+  }
+}
+
+.task-cont {
+  height: 2.22rem;
+  background: #fff;
+  border-radius: 0.15rem;
+  padding: 0.32rem;
+  .task-pic {
+    width: 1.72rem;
+    height: 2.22rem;
+    border-radius: 0.1rem;
+    overflow: hidden;
+    margin-right: 0.32rem;
+    img {
+      width: 1.72rem;
+      height: 2.22rem;
+      overflow: hidden;
+    }
+  }
+  .task-info {
+    // width: 3.36rem;
+    .task-name {
+      h2 {
+        font-size: 0.34rem;
+        color: #848c92;
+        line-height: 0.38rem;
+        margin-bottom: 0.2rem;
+      }
+      p {
+        font-size: 0.28rem;
+        line-height: 0.36rem;
+        color: #848c92;
+        span {
+          color: #d9b60b;
+        }
+      }
+    }
+    .label-btn {
+      width: 1.62rem;
+      height: 0.58rem;
+      // display: block;
+      border-radius: 0.15rem;
+      background: #fce43a linear-gradient(#fce744,#f9d116);
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.58rem;
+      span {
+        width: 0.34rem;
+        height: 0.34rem;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+        margin-left: 0.08rem;
+        margin-right: 0.16rem;
+        line-height: 0.34rem;
+        text-align: center;
+        .great-icon {
+          color: #fadc23;
+          font-size: 0.18rem;
+        }
+      }
+    }
+    .label-tips {
+      color: #8a9399;
+      font-size: 0.28rem;
+      line-height: 0.48rem;
+      em {
+        color: #d9b60b;
+      }
+    }
+    .label-btn-end {
+      color: #ff2a2a;
+      font-size: 0.28rem;
+      line-height: 0.58rem;
+    }
+  }
+}
